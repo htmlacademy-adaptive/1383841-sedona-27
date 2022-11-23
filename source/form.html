@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Academy: Седона</title>
+</head>
+<body>
+    <header class="main-header">
+        <nav class="main-nav main-nav--site">
+            <button class="main-nav__toggle" type="button">
+                <span class="visually-hidden">Открыть меню</span>
+            </button>
+            <div class="main-nav__wrapper">
+                <ul class="main-nav__list site-list">
+                    <li class="site-list__item">
+                        <a href="index.html">главная</a>
+                    </li>
+                    <li class="site-list__item">
+                        <a href="catalog.html">фото и видео</a>
+                    </li>
+                    <li class="site-list__item site-list__item--active">
+                        <a>форма отзыва</a>
+                    </li>
+                    <li class="site-list__item">
+                        <a href="#">htmlacademy</a>
+                    </li>
+                </ul>
+                <a class="main-header__logo">
+                    <img class="main-header__logo-image" src="img/main-header__logo.svg" width="185" height="96"
+                        alt="Логотип Седоны">
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-container">
+
+        <h1 class="visually-hidden">анкета для Гостиницы</h1>
+
+        <section class="review-intro">
+            <div class="review-intro__wrapper">
+                <h2 class="review-intro__title">оставьте свой отзыв</h2>
+                <p class="review-intro__depiction">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+            </div>
+        </section>
+        <section class="blank-review">
+            <div class="blank-review__wrapper">
+                <div class="blank-review__intro">
+                    <h2 class="blank-review__intro-title blank-review-title">представьтесь:</h2>                    
+                    <span class="blank-review__intro-fc">имя*:</span>
+                    <form action="send.php" method="post" class="blank-review__intro-form">
+                        <label for="forename" class="visually-hidden">Ваше имя</label>
+                        <input type="text" id="forename" name="forename" class="intro-blank__fc" placeholder="Пётр" required>
+                    </form>
+                    <span class="blank-review__intro-fc">фамилия*:</span>
+                    <form action="send.php" method="post" class="blank-review__intro-form">
+                        <label for="firstname" class="visually-hidden">Ваша фамилия</label>
+                        <input type="text" id="firstname" name="firstname" class="intro-blank__fc" placeholder="Пустота" required>
+                    </form>
+                    <span class="blank-review__intro-fc">отчество*:</span>
+                    <form action="send.php" method="post" class="blank-review__intro-form">
+                        <label for="patronymic" class="visually-hidden">Ваше отчество</label>
+                        <input type="text" id="patronymic" name="patronymic" class="intro-blank__fc" placeholder="Викторович">
+                    </form>
+                </div>
+                <div class="blank-review__contacts">
+                    <h2 class="blank-review__contacts-title">контактная информация:</h2>
+                    <span class="blank-review__contacts-data">контактный телефон*:</span>
+                    <form action="send.php" method="post" class="blank-review__contacts-form">
+                        <label for="telephone" class="visually-hidden">телефон</label>
+                        <input type="tel" id="telephone" name="telephone" class="contacts-blank__tel" placeholder="Введите телефон" required>
+                    </form>
+                    <span class="blank-review__contacts-data">электронная почта*:</span>
+                    <form action="send.php" method="post" class="blank-review__contacts-form">
+                        <label for="email" class="visually-hidden">телефон</label>
+                        <input type="email" id="email" name="email" class="contacts-blank__email" placeholder="Введите e-mail" required>
+                    </form>
+                </div>
+                <div class="blank-impression">
+                    <ul class="blank-impression__list">
+                        <li class="blank-impression__item">
+                            <label class="impression__item-control">
+                                <input class="control-input visually-hidden" type="radio" name="mark" value="advantage" checked>
+                                <span class="control-mark"></span>
+                                <span class="control-label">Скорее положительное</span>
+                            </label>
+                        </li>
+                        <li class="blank-impression__item">
+                            <label class="impression__item-control">
+                                <input class="control-input visually-hidden" type="radio" name="mark" value="disadvantage">
+                                <span class="control-mark"></span>
+                                <span class="control-label">Скорее отрицательное</span>
+                            </label>
+                        </li>
+                        <li class="blank-impression__item">
+                            <label class="impression__item-control">
+                                <input class="control-input visually-hidden" type="radio" name="mark" value="middle-op">
+                                <span class="control-mark"></span>
+                                <span class="control-label">Затрудняюсь ответить</span>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="blank-site">
+                    <ul class="blank-site__list">
+                        <li class="blank-site__item">
+                            <label class="site__item-control">
+                                <input class="control-input visually-hidden" type="checkbox" name="bridge" checked id="bridge">
+                                <span class="control-mark"></span>
+                                <label for="bridge" class="control">Мост Дьявола</label>
+                            </label>
+                        </li>
+                        <li class="hotels-filter-item">
+                            <label class="site__item-control">
+                                <input class="control-input visually-hidden" type="checkbox" name="mountain" checked id="mountain">
+                                <span class="control-mark"></span>
+                                <label for="mountain" class="control">Гора-Колокол</label>
+                            </label>
+                        </li>
+                        <li class="hotels-filter-item">
+                            <label class="site__item-control">
+                                <input class="control-input visually-hidden" type="checkbox" name="park" checked id="park">
+                                <span class="control-mark"></span>
+                                <label for="park" class="control">Слайд-парк</label>
+                            </label>
+                        </li>
+                        <li class="hotels-filter-item">
+                            <label class="site__item-control">
+                                <input class="control-input visually-hidden" type="checkbox" name="riffs" id="riffs">
+                                <span class="control-mark"></span>
+                                <label for="riffs" class="control">Красные скалы</label>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="blank-emotions">
+                    <h2 class="blank-emotions__title">опишите свои эмоции:</h2>
+                    <form action="send.php" method="post" class="blank-emotions-form">
+                        <label for="emotions" class="visually-hidden">Ваше имя</label>
+                        <input type="text" id="emotions" name="emotions" class="blank-emotions__depiction" placeholder="Опишите подробно все свои восторги ">
+                    </form>
+                </div>
+                <div class="blank-submit">
+                    <button class="blank-submit__button blue-form-button" type="submit">отправить отзыв</button>
+                    <span class="blank-submit__depiction">* — обязательные поля</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="main-footer__wrapper">
+            <a class="main-footer-link">#visitsedona</a>
+            <ul class="main-footer__social-item">
+                <li class="main-footer__social-item">
+                    <span class="visually-hidden">вконтакте</span>
+                </li>
+                <li class="main-footer__social-item">
+                    <span class="visually-hidden">телеграм</span>
+                </li>
+                <li class="main-footer__social-item">
+                    <span class="visually-hidden">ютуб</span>
+                </li>
+            </ul>
+            <a class="main-footer__copyrights">разработано</a>
+        </div>
+    </footer>
+
+</body>
+</html>
