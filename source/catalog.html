@@ -6,7 +6,7 @@
 </head>
 <body>
     <header class="main-header">
-        <nav class="main-nav main-nav--site">
+        <nav class="main-nav">
             <button class="main-nav__toggle" type="button">
                 <span class="visually-hidden">Открыть меню</span>
             </button>
@@ -26,7 +26,7 @@
                     </li>
                 </ul>
                 <a class="main-header__logo">
-                    <img class="main-header__logo-image" src="img/main-header__logo.svg" width="185" height="96"
+                    <img src="img/main-header__logo.svg" width="185" height="96"
                         alt="Логотип Седоны">
                 </a>
             </div>
@@ -36,7 +36,7 @@
     
     <main class="main-container">
 
-        <h1 class="visually-hidden">Публикации Гостиницы</h1>
+        <h1 class="visually-hidden">Публикации Гостиницы Седоны</h1>
 
         <section class="posts">
             <div class="posts__wrapper">
@@ -44,28 +44,36 @@
                 <p class="posts__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
                 <ul class="posts__list">
                     <li class="posts-list__item card">
-                        <img class="card__photo" src="img/post-photo-1.jpg" width="280" height="280" alt="фото природы">
+                        <div class="card__photo">
+                            <img src="img/post-photo-1.jpg" width="280" height="280" alt="фото природы">
+                        </div>
                         <h3 class="card__title">неродные просторы</h3>
                         <span class="card__author">Автор фото: Борис</span>
-                        <button class="card__counter">1350</button>
+                        <button class="card__counter" type="button">1350</button>
                     </li>
                     <li class="posts-list__item card">
-                        <img class="card__photo" src="img/post-photo-2.jpg" width="280" height="280" alt="фото природы">
+                        <div class="card__photo">
+                            <img src="img/post-photo-2.jpg" width="280" height="280" alt="фото природы">
+                        </div>
                         <h3 class="card__title">местная растительность</h3>
                         <span class="card__author">Автор фото: Сергей</span>
-                        <button class="card__counter">143</button>
+                        <button class="card__counter" type="button">143</button>
                     </li>
                     <li class="posts-list__item card">
-                        <img class="card__photo" src="img/post-photo-3.jpg" width="280" height="280" alt="фото природы">
+                        <div class="card__photo">
+                            <img src="img/post-photo-3.jpg" width="280" height="280" alt="фото природы">
+                        </div>
                         <h3 class="card__title">дорога на север</h3>
                         <span class="card__author">Автор фото: Петр</span>
-                        <button class="card__counter">96</button>
+                        <button class="card__counter" type="button">96</button>
                     </li>
                     <li class="posts-list__item card">
-                        <img class="card__photo" src="img/post-photo-4.jpg" width="280" height="280" alt="фото природы">
+                        <div class="card__photo">
+                            <img src="img/post-photo-4.jpg" width="280" height="280" alt="фото природы">
+                        </div>
                         <h3 class="card__title">мост дьявола</h3>
                         <span class="card__author">Автор фото: Антон</span>
-                        <button class="card__counter">254</button>
+                        <button class="card__counter" type="button">254</button>
                     </li>                
                 </ul>
             </div>
@@ -83,8 +91,8 @@
 
     <footer class="main-footer">
         <div class="main-footer__wrapper">
-            <a class="main-footer-link">#visitsedona</a>
-            <ul class="main-footer__social-item">
+            <a class="main-footer__link">#visitsedona</a>
+            <ul class="main-footer__social-list">
                 <li class="main-footer__social-item">
                     <span class="visually-hidden">вконтакте</span>
                 </li>

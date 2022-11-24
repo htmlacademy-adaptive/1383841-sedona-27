@@ -6,7 +6,7 @@
 </head>
 <body>
     <header class="main-header">
-        <nav class="main-nav main-nav--site">
+        <nav class="main-nav">
             <button class="main-nav__toggle" type="button">
                 <span class="visually-hidden">Открыть меню</span>
             </button>
@@ -26,7 +26,7 @@
                     </li>
                 </ul>
                 <a class="main-header__logo">
-                    <img class="main-header__logo-image" src="img/main-header__logo.svg" width="185" height="96"
+                    <img src="img/main-header__logo.svg" width="185" height="96"
                         alt="Логотип Седоны">
                 </a>
             </div>
@@ -46,29 +46,24 @@
         <section class="blank-review">
             <form action="send.php" method="post" class="blank-form">
                 <div class="blank-review__wrapper">
-                    <div class="blank-review__intro">
-                        <h2 class="blank-review__intro-title blank-review-title">представьтесь:</h2>                    
-                        <span class="blank-review__intro-fc">имя*:</span>                    
-                            <label for="forename" class="visually-hidden">Ваше имя</label>
-                            <input type="text" id="forename" name="forename" class="blank-review__fc" placeholder="Пётр" required>                    
-                        <span class="blank-review__intro-fc">фамилия*:</span>                    
-                            <label for="firstname" class="visually-hidden">Ваша фамилия</label>
-                            <input type="text" id="firstname" name="firstname" class="blank-review__fc" placeholder="Пустота" required>                    
-                        <span class="blank-review__intro-fc">отчество*:</span>                    
-                            <label for="patronymic" class="visually-hidden">Ваше отчество</label>
-                            <input type="text" id="patronymic" name="patronymic" class="blank-review__fc" placeholder="Викторович">
-                    </div>
-                    <div class="blank-review__contacts">
-                        <h2 class="blank-review__contacts-title">контактная информация:</h2>
-                        <span class="blank-review__contacts-data">контактный телефон*:</span>                    
-                            <label for="telephone" class="visually-hidden">телефон</label>
-                            <input type="tel" id="telephone" name="telephone" class="blank-review__tel" placeholder="Введите телефон" required>                    
-                        <span class="blank-review__contacts-data">электронная почта*:</span>                    
-                            <label for="email" class="visually-hidden">телефон</label>
+                    <fieldset class="blank-review__intro">
+                        <legend class="blank-review__legend blank-review__legend">представьтесь:</legend>                                                                
+                        <label for="forename" class="blank-review__intro-name">имя*</label>
+                            <input type="text" id="forename" name="forename" class="blank-review__name" placeholder="Пётр" required>                                        
+                        <label for="firstname" class="blank-review__intro-name">фамилия*:</label>
+                            <input type="text" id="firstname" name="firstname" class="blank-review__name" placeholder="Пустота" required>                                        
+                        <label for="patronymic" class="blank-review__intro-name">отчество*:</label>
+                            <input type="text" id="patronymic" name="patronymic" class="blank-review__name" placeholder="Викторович">
+                    </fieldset>
+                    <fieldset class="blank-review__contacts">
+                        <legend class="blank-review__contacts-legends blank-review__legend">контактная информация:</legend>                    
+                        <label for="telephone" class="blank-review__contacts-data">контактный телефон*:</label>
+                            <input type="tel" id="telephone" name="telephone" class="blank-review__tel" placeholder="Введите телефон" required>                                        
+                        <label for="email" class="blank-review__contacts-data">электронная почта*:</label>
                             <input type="email" id="email" name="email" class="blank-review__email" placeholder="Введите e-mail" required>                    
-                    </div>
+                    </fieldset>
                     <fieldset class="blank-impression">
-                        <legend class="blank-review__impression-title blank-review-title">ваше общее впечатление:</legend>
+                        <legend class="blank-impression__legend blank-review__legend">ваше общее впечатление:</legend>
                         <ul class="blank-impression__list">
                             <li class="blank-impression__item">
                                 <label class="blank-impression__item__control">
@@ -94,34 +89,30 @@
                         </ul>
                     </fieldset>
                     <fieldset class="blank-site">
-                        <legend class="blank-site__intro-title blank-review-title">посещенные достопримечательности:</legend>
+                        <legend class="blank-site__legend blank-review__legend">посещенные достопримечательности:</legend>
                         <ul class="blank-site__list">
                             <li class="blank-site__item">
-                                <label class="blank-site__item-control">
+                                <label for="bridge" class="blank-site__item-control">
                                     <input class="control-input visually-hidden" type="checkbox" name="bridge" checked id="bridge">
-                                    <span class="control-mark"></span>
-                                    <label for="bridge" class="control">Мост Дьявола</label>
+                                    <span class="control-mark"></span>Мост Дьявола
                                 </label>
                             </li>
                             <li class="blank-site__item">
-                                <label class="blank-site__item-control">
+                                <label for="mountain" class="blank-site__item-control">
                                     <input class="control-input visually-hidden" type="checkbox" name="mountain" checked id="mountain">
-                                    <span class="control-mark"></span>
-                                    <label for="mountain" class="control">Гора-Колокол</label>
+                                    <span class="control-mark"></span>Гора-Колокол
                                 </label>
                             </li>
                             <li class="blank-site__item">
-                                <label class="blank-site__item-control">
+                                <label for="park" class="blank-site__item-control">
                                     <input class="control-input visually-hidden" type="checkbox" name="park" checked id="park">
-                                    <span class="control-mark"></span>
-                                    <label for="park" class="control">Слайд-парк</label>
+                                    <span class="control-mark"></span>Слайд-парк
                                 </label>
                             </li>
                             <li class="blank-site__item">
-                                <label class="blank-site__item-control">
+                                <label for="riffs" class="blank-site__item-control">
                                     <input class="control-input visually-hidden" type="checkbox" name="riffs" id="riffs">
-                                    <span class="control-mark"></span>
-                                    <label for="riffs" class="control">Красные скалы</label>
+                                    <span class="control-mark"></span>Красные скалы
                                 </label>
                             </li>
                         </ul>
@@ -144,8 +135,8 @@
 
     <footer class="main-footer">
         <div class="main-footer__wrapper">
-            <a class="main-footer-link">#visitsedona</a>
-            <ul class="main-footer__social-item">
+            <a class="main-footer__link">#visitsedona</a>
+            <ul class="main-footer__social-list">
                 <li class="main-footer__social-item">
                     <span class="visually-hidden">вконтакте</span>
                 </li>
