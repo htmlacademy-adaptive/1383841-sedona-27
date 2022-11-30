@@ -1,24 +1,4 @@
-@font-face {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../../fonts/ptsans.woff2") format("woff2");
 
-  font-display: swap;
-}
-
-@mixin fontMain {
-  font: {
-    family: "PT Sans", sans-serif;
-    style: normal;
-    weight: 700;
-    size: 18px;
-  }
-  line-height: 26px;
-}
-
-$white: rgba(255, 255, 255, 1);
-$blue: rgba(129, 179, 210, 1);
 
 .main-container {
   background-image: url("../../img/main-background.jpg");

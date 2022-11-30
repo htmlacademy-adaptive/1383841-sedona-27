@@ -1,0 +1,33 @@
+
+.posts__list {
+  @include fontMain;
+  display: flex;
+  flex-direction: column;
+}
+
+.posts__item {
+  border-top: 1px solid $grey;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.card__title {
+  margin-top: 10px;
+}
+
+.card__counter {
+  @include fontMain;
+
+  display: flex;
+  min-width: 70px;
+  justify-content: space-between;
+}
+
+.card__author {
+  @include fontSmall;
+
+  display: block;
+  margin-top: 5px;
+}

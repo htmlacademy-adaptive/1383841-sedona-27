@@ -9,5 +9,17 @@
   line-height: 26px;
 }
 
+@mixin fontSmall {
+  font: {
+    family: "PT Sans", sans-serif;
+    style: normal;
+    weight: 400;
+    size: 13px;
+  }
+
+  line-height: 21px;
+}
+
 $white: rgba(255, 255, 255, 1);
 $blue: rgba(129, 179, 210, 1);
+$grey: rgba(229, 229, 229, 1);

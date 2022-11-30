@@ -9,6 +9,8 @@
 
 button {
   border: 0;
+  padding: 0;
+  background-color: transparent;
 }
 
 .visually-hidden {
@@ -40,4 +42,9 @@ a {
   text-decoration: none;
   font: inherit;
   color: inherit;
+}
+
+h2,
+h3 {
+  margin: 0;
 }

@@ -1,6 +1,10 @@
 
-
 .doubts {
   @include fontMain;
   background-color: $white;
+  text-align: center;
+}
+
+.doubts__description {
+  font-size: 18px;
 }
