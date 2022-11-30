@@ -1,0 +1,21 @@
+.interested {
+  @include fontMain;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.interested__depiction {
+  @include fontSmall;
+  text-transform: uppercase;
+}
+
+.interested__search {
+  display: inline-block;
+  text-transform: uppercase;
+  width: 284px;
+  height: 58px;
+  background-color: $blue;
+  color: $white;
+  text-align: center;
+  vertical-align: middle;
+}
