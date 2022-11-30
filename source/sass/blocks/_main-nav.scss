@@ -1,0 +1,38 @@
+
+
+$white: rgba(255, 255, 255, 1);
+$blue: rgba(129, 179, 210, 1);
+
+.main-nav {
+  @include fontMain;
+  display: flex;
+  text-transform: uppercase;
+  background-color: $white;
+  color: $white;
+}
+
+.closed {
+  display: none;
+}
+
+.main-nav__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-nav__item {
+  background-color: $blue;
+  width: 320px;
+  height: 55px;
+  text-align: center;
+  border-top: 1px solid lighten($blue, 20%);
+  border-bottom: 1px solid darken($blue, 20%);
+}
+
+.main-nav__item:first-child {
+  border-top: none;
+}
+
+.main-nav__item:last-child {
+  border-bottom: 1px solid linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+}

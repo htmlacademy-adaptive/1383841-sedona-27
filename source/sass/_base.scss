@@ -1,0 +1,43 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../fonts/ptsans.woff2") format("woff2");
+
+  font-display: swap;
+}
+
+button {
+  border: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 100%;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  font: inherit;
+  color: inherit;
+}
