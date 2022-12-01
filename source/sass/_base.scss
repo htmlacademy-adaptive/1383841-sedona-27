@@ -7,23 +7,6 @@
   font-display: swap;
 }
 
-button {
-  border: 0;
-  padding: 0;
-  background-color: transparent;
-}
-
-.visually-hidden {
-  position: absolute;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-}
-
 body {
   display: flex;
   flex-direction: column;
@@ -32,19 +15,8 @@ body {
   margin: 0;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-a {
-  text-decoration: none;
-  font: inherit;
-  color: inherit;
-}
-
-h2,
-h3 {
-  margin: 0;
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
