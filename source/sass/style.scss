@@ -20,6 +20,11 @@
 @import "blocks/main-nav";
 @import "blocks/main-container";
 @import "blocks/main-footer";
+@import "blocks/main-header";
 @import "blocks/blank-review";
 @import "blocks/doubts";
 @import "blocks/posts";
+
+//скрытие блоков
+
+@import "closed";
