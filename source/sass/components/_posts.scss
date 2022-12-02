@@ -1,0 +1,15 @@
+
+.posts__list {
+  @include fontMain;
+
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.posts__item {
+  border-top: 1px solid $grey;
+  padding: 24px 20px;
+}

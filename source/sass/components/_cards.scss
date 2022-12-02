@@ -1,0 +1,21 @@
+.card__title {
+  margin: 0;
+  margin-top: 10px;
+}
+
+.card__counter {
+  @include fontMain;
+
+  display: flex;
+  min-width: 70px;
+  justify-content: space-between;
+  background-color: transparent;
+  border: none;
+}
+
+.card__author {
+  @include fontSmall;
+
+  display: block;
+  margin-top: 5px;
+}

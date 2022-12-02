@@ -1,0 +1,20 @@
+.feature-list {
+  @include fontMain;
+
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  padding-left: 65px;
+}
+
+.feature-item {
+  text-transform: uppercase;
+  width: 320px;
+  height: 211px;
+}
+
+.feature-item__depiction {
+  @include fontSmall;
+}

@@ -1,0 +1,13 @@
+
+
+$white: rgba(255, 255, 255, 1);
+
+.blank-review {
+  @include fontMain;
+  background-color: $white;
+}
+
+.blank-form {
+  @include fontMain;
+  background-color: $white;
+}

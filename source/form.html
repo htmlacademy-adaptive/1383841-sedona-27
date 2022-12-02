@@ -3,28 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <header class="main-header">
         <nav class="main-nav">
-            <ul class="main-nav__list site-list">
-                <li class="site-list__item site-list__item--active">
+            <ul class="main-nav__list main-nav__list--closed">
+                <li class="main-nav__item main-nav__item--active">
                     <a href="index.html">главная</a>
                 </li>
-                <li class="site-list__item">
-                    <a href="catalog.html">фото и видео</a>
+                <li class="main-nav__item">
+                    <a>фото и видео</a>
                 </li>
-                <li class="site-list__item">
-                    <a>форма отзыва</a>
+                <li class="main-nav__item">
+                    <a href="form.html">форма отзыва</a>
                 </li>
-                <li class="site-list__item">
+                <li class="main-nav__item">
                     <a href="#">htmlacademy</a>
                 </li>
             </ul>
             <button class="main-nav__toggle" type="button">
                 <span class="visually-hidden">Открыть меню</span>
             </button>
-            <a class="main-header__logo">
+            <a class="main-header__logo closed">
                 <img src="img/main-header__logo.svg" width="185" height="96" alt="Логотип Седоны">
             </a>
         </nav>
@@ -44,20 +46,20 @@
             <form action="send.php" method="post" class="blank-form">
                 <div class="blank-review__wrapper">
                     <fieldset class="blank-review__intro">
-                        <legend class="blank-review__legend blank-review__legend">представьтесь:</legend>                                                                
+                        <legend class="blank-review__legend blank-review__legend">представьтесь:</legend>
                         <label for="forename" class="blank-review__intro-name">имя*</label>
-                            <input type="text" id="forename" name="forename" class="blank-review__name" placeholder="Пётр" required>                                        
+                            <input type="text" id="forename" name="forename" class="blank-review__name" placeholder="Пётр" required>
                         <label for="firstname" class="blank-review__intro-name">фамилия*:</label>
-                            <input type="text" id="firstname" name="firstname" class="blank-review__name" placeholder="Пустота" required>                                        
+                            <input type="text" id="firstname" name="firstname" class="blank-review__name" placeholder="Пустота" required>
                         <label for="patronymic" class="blank-review__intro-name">отчество*:</label>
                             <input type="text" id="patronymic" name="patronymic" class="blank-review__name" placeholder="Викторович">
                     </fieldset>
                     <fieldset class="blank-review__contacts">
-                        <legend class="blank-review__contacts-legends blank-review__legend">контактная информация:</legend>                    
+                        <legend class="blank-review__contacts-legends blank-review__legend">контактная информация:</legend>
                         <label for="telephone" class="blank-review__contacts-data">контактный телефон*:</label>
-                            <input type="tel" id="telephone" name="telephone" class="blank-review__tel" placeholder="Введите телефон" required>                                        
+                            <input type="tel" id="telephone" name="telephone" class="blank-review__tel" placeholder="Введите телефон" required>
                         <label for="email" class="blank-review__contacts-data">электронная почта*:</label>
-                            <input type="email" id="email" name="email" class="blank-review__email" placeholder="Введите e-mail" required>                    
+                            <input type="email" id="email" name="email" class="blank-review__email" placeholder="Введите e-mail" required>
                     </fieldset>
                     <fieldset class="blank-impression">
                         <legend class="blank-impression__legend blank-review__legend">ваше общее впечатление:</legend>
