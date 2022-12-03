@@ -1,0 +1,60 @@
+.blank-review {
+  @include fontMain;
+  background-color: $white;
+}
+
+.blank-form {
+  @include fontMain;
+  background-color: $white;
+}
+
+.blank-review__wrapper {
+  margin: auto;
+}
+
+.blank-review__intro {
+  display: flex;
+  flex-direction: column;
+}
+
+.blank-review__legend {
+  text-align: center;
+}
+
+.blank-review__intro-name {
+  @include fontSmall;
+  text-transform: uppercase;
+  margin-top: 16px;
+}
+
+.blank-review__contacts-data {
+  @include fontSmall;
+  text-transform: uppercase;
+  margin-top: 16px;
+}
+
+.blank-review__label {
+  display: block;
+
+  @include fontMain;
+
+  color: $black;
+  background-color: $input;
+  border: none;
+  width: 280px;
+  height: 58px;
+  padding-left: 16px;
+}
+
+.blank-review__tel {
+  display: block;
+
+  @include fontMain;
+
+  color: $black;
+  background-color: $input;
+  border: none;
+  width: 280px;
+  height: 58px;
+  padding-left: 16px;
+}

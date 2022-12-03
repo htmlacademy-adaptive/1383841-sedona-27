@@ -1,0 +1,12 @@
+.blank-emotions__depiction {
+  display: block;
+
+  @include fontMain;
+
+  color: $black;
+  background-color: $input;
+  border: none;
+  min-width: 279px;
+  height: 150px;
+  padding-left: 16px;
+}

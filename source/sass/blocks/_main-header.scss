@@ -1,13 +1,19 @@
 .main-header {
+  width: 100%;
+  max-width: 1200px;
   height: 56px;
+  margin: auto;
 }
 
 .main-header__logo {
-  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   margin: auto;
 }
 
 .main-nav__toggle {
+  position: relative;
   background: transparent;
   border: none;
   content: "";
@@ -19,6 +25,10 @@
 }
 
 .main-nav__toggle::after {
+  position: absolute;
+  display: block;
+  top: -9px;
+  left: 0;
   content: "";
   width: 22px;
   height: 4px;
@@ -26,6 +36,10 @@
 }
 
 .main-nav__toggle::before {
+  position: absolute;
+  display: block;
+  top: 9px;
+  left: 0;
   content: "";
   width: 22px;
   height: 4px;

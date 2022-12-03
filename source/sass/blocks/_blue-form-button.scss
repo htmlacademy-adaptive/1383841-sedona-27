@@ -1,0 +1,9 @@
+.blue-form-button {
+  background-color: $blue;
+  color: $white;
+  text-transform: uppercase;
+  border: none;
+
+  @include fontMain;
+  font-size: 21px;
+}

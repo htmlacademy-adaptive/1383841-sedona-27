@@ -1,3 +1,23 @@
+.posts__intro {
+  text-align: center;
+
+  @include tablet {
+    width: 458px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.posts__title {
+  text-transform: uppercase;
+}
+
+.posts__description {
+  @include fontSmall;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
 
 .posts__list {
   @include fontMain;
@@ -7,9 +27,32 @@
   list-style-type: none;
   display: flex;
   flex-direction: column;
+
+  @include tablet {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .posts__item {
   border-top: 1px solid $grey;
   padding: 24px 20px;
+  margin: auto;
+
+  @include tablet {
+    border: none;
+    height: 347px;
+    min-width: 324px;
+    padding: 0;
+    flex-grow: 1;
+  }
+}
+
+.posts__item--current {
+  @include tablet {
+    height: 480px;
+    min-width: 648px;
+    width: 100%;
+    flex-grow: 3;
+  }
 }
