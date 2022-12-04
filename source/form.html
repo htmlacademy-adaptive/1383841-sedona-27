@@ -45,22 +45,24 @@
         <section class="blank-review">
             <form action="send.php" method="post" class="blank-form">
                 <div class="blank-review__wrapper">
-                    <fieldset class="blank-review__intro">
-                        <legend class="blank-review__legend blank-review__legend">представьтесь:</legend>
-                        <label for="forename" class="blank-review__intro-name">имя*</label>
-                            <input type="text" id="forename" name="forename" class="blank-review__name blank-review__label" placeholder="Пётр" required>
-                        <label for="firstname" class="blank-review__intro-name">фамилия*:</label>
-                            <input type="text" id="firstname" name="firstname" class="blank-review__name blank-review__label" placeholder="Пустота" required>
-                        <label for="patronymic" class="blank-review__intro-name">отчество*:</label>
-                            <input type="text" id="patronymic" name="patronymic" class="blank-review__name blank-review__label" placeholder="Викторович">
-                    </fieldset>
-                    <fieldset class="blank-review__contacts">
-                        <legend class="blank-review__contacts-legends blank-review__legend">контактная информация:</legend>
-                        <label for="telephone" class="blank-review__contacts-data">контактный телефон*:</label>
-                            <input type="tel" id="telephone" name="telephone" class="blank-review__tel blank-review__label" placeholder="Введите телефон" required>
-                        <label for="email" class="blank-review__contacts-data">электронная почта*:</label>
-                            <input type="email" id="email" name="email" class="blank-review__email blank-review__label" placeholder="Введите e-mail" required>
-                    </fieldset>
+                    <div class="blank-review__main-info">
+                        <fieldset class="blank-review__intro">
+                            <legend class="blank-review__legend blank-review__legend">представьтесь:</legend>
+                            <label for="forename" class="blank-review__intro-name">имя*</label>
+                                <input type="text" id="forename" name="forename" class="blank-review__name blank-review__label" placeholder="Пётр" required>
+                            <label for="firstname" class="blank-review__intro-name">фамилия*:</label>
+                                <input type="text" id="firstname" name="firstname" class="blank-review__name blank-review__label" placeholder="Пустота" required>
+                            <label for="patronymic" class="blank-review__intro-name">отчество*:</label>
+                                <input type="text" id="patronymic" name="patronymic" class="blank-review__name blank-review__label" placeholder="Викторович">
+                        </fieldset>
+                        <fieldset class="blank-review__contacts">
+                            <legend class="blank-review__contacts-legends blank-review__legend">контактная информация:</legend>
+                            <label for="telephone" class="blank-review__contacts-data">контактный телефон*:</label>
+                                <input type="tel" id="telephone" name="telephone" class="blank-review__tel blank-review__label" placeholder="Введите телефон" required>
+                            <label for="email" class="blank-review__contacts-data">электронная почта*:</label>
+                                <input type="email" id="email" name="email" class="blank-review__email blank-review__label" placeholder="Введите e-mail" required>
+                        </fieldset>
+                    </div>
                     <fieldset class="blank-impression">
                         <legend class="blank-impression__legend blank-review__legend">ваше общее впечатление:</legend>
                         <ul class="blank-impression__list">

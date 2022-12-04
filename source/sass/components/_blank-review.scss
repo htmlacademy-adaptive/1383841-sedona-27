@@ -12,25 +12,55 @@
   margin: auto;
 }
 
+.blank-review__main-info {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  @include tablet {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+
 .blank-review__intro {
+  position: relative;
   display: flex;
   flex-direction: column;
 }
 
+.blank-review__main-info::after {
+  position: absolute;
+  display: block;
+  content: "";
+  left: 50%;
+  top: 0;
+  width: 1px;
+  height: 338px;
+  background-color: $grey;
+}
+
 .blank-review__legend {
   text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 28px;
 }
 
 .blank-review__intro-name {
   @include fontSmall;
   text-transform: uppercase;
-  margin-top: 16px;
+  margin-bottom: 6px;
+  margin-left: 16px;
+}
+
+.blank-review__contacts-legends {
+  margin-bottom: 22px;
 }
 
 .blank-review__contacts-data {
   @include fontSmall;
   text-transform: uppercase;
-  margin-top: 16px;
+  margin-left: 16px;
 }
 
 .blank-review__label {
@@ -44,6 +74,11 @@
   width: 280px;
   height: 58px;
   padding-left: 16px;
+  margin-bottom: 16px;
+
+  @include desktop {
+    width: 480px;
+  }
 }
 
 .blank-review__tel {
@@ -57,4 +92,26 @@
   width: 280px;
   height: 58px;
   padding-left: 16px;
+  margin-top: 6px;
+  margin-bottom: 12px;
+
+  @include desktop {
+    width: 480px;
+  }
+}
+
+.blank-review__tel::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 58px;
+  height: 58px;
+  background-color: $grey;
+  background-image: url("../../img/phone.svg");
+  top: 0;
+  left: 20%;
+}
+
+.blank-review__email {
+  margin-top: 6px;
 }

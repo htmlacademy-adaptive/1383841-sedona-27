@@ -4,6 +4,7 @@
 @import "base.scss";
 @import "utils.scss";
 @import "variables.scss";
+@import "control";
 
 // Компоненты
 
@@ -15,7 +16,9 @@
 @import "components/cards";
 @import "components/blank-review";
 @import "components/blank-emotions";
+@import "components/blank-impression";
 @import "components/blank-submit";
+@import "components/blank-site";
 
 // Блоки и Секции
 
