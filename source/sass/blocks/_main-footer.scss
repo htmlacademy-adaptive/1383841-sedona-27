@@ -30,6 +30,8 @@
 .main-footer__social-item {
   width: 48px;
   height: 48px;
+  display: grid;
+  place-items: center;
   background-color: $blue;
   margin-right: 6px;
 }

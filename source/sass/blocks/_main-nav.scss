@@ -28,6 +28,16 @@ $blue: rgba(129, 179, 210, 1);
     list-style-type: none;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.main-nav__list--right {
+  //display: block;
+
+  @include tablet {
+    margin-left: auto;
+    justify-content: space-between;
   }
 }
 
@@ -59,9 +69,6 @@ $blue: rgba(129, 179, 210, 1);
   color: inherit;
 }
 
-.main-nav__item:nth-of-type(3) {
-  margin-left: auto;
-}
 
 .main-nav__item:first-child {
   border-top: none;

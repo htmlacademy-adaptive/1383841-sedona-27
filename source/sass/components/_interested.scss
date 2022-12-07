@@ -2,6 +2,9 @@
   @include fontMain;
   padding-left: 18px;
   padding-right: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .interested__depiction {
@@ -12,8 +15,10 @@
 .interested__search {
   display: inline-block;
   text-transform: uppercase;
+  text-decoration: none;
   width: 284px;
   height: 58px;
+  padding-top: 16px;
   background-color: $blue;
   color: $white;
   text-align: center;
