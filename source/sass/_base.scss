@@ -8,6 +8,7 @@
 }
 
 body {
+  @include fontMain;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -19,4 +20,18 @@ body {
 *::after,
 *::before {
   box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+
+  object-fit: cover;
+  object-position: center;
+  user-select: none;
+}
+
+fieldset {
+  border: none;
 }

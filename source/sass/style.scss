@@ -4,6 +4,7 @@
 @import "base.scss";
 @import "utils.scss";
 @import "variables.scss";
+@import "control";
 
 // Компоненты
 
@@ -13,6 +14,11 @@
 @import "components/advantages";
 @import "components/interested";
 @import "components/cards";
+@import "components/blank-review";
+@import "components/blank-emotions";
+@import "components/blank-impression";
+@import "components/blank-submit";
+@import "components/blank-site";
 
 // Блоки и Секции
 
@@ -20,6 +26,11 @@
 @import "blocks/main-nav";
 @import "blocks/main-container";
 @import "blocks/main-footer";
-@import "blocks/blank-review";
+@import "blocks/main-header";
 @import "blocks/doubts";
 @import "blocks/posts";
+@import "blocks/blue-form-button";
+
+//скрытие блоков
+
+@import "closed";

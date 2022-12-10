@@ -6,37 +6,69 @@ $blue: rgba(129, 179, 210, 1);
 .main-nav {
   @include fontMain;
   display: flex;
+  position: relative;
   text-transform: uppercase;
   background-color: $white;
   color: $white;
 }
 
-.closed {
-  display: none;
-}
-
 .main-nav__list {
   margin: 0;
   padding: 0;
+  width: 100%;
   list-style-type: none;
   display: flex;
   flex-direction: column;
+
+  @include tablet {
+    margin: 0;
+    padding: 0;
+    padding-top: 18px;
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.main-nav__list--right {
+  //display: block;
+
+  @include tablet {
+    margin-left: auto;
+    justify-content: space-between;
+  }
 }
 
 .main-nav__item {
   background-color: $blue;
   color: $white;
-  width: 320px;
-  height: 55px;
+  height: auto;
+  width: auto;
+  margin-right: 50px;
+  padding-top: 17px;
+  padding-bottom: 13px;
   text-align: center;
   border-top: 1px solid lighten($blue, 20%);
   border-bottom: 1px solid darken($blue, 20%);
+
+  @include tablet {
+    background-color: transparent;
+    color: $black;
+    height: auto;
+    padding-top: 0;
+    padding-bottom: 0;
+    text-align: center;
+    border: none;
+  }
 }
 
 .main-nav__item a {
   text-decoration: none;
   color: inherit;
 }
+
 
 .main-nav__item:first-child {
   border-top: none;
@@ -45,3 +77,4 @@ $blue: rgba(129, 179, 210, 1);
 .main-nav__item:last-child {
   border-bottom: 1px solid linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
 }
+

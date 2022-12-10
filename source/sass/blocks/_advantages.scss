@@ -1,4 +1,127 @@
-.advantages {
-  @include fontMain;
-  $white: rgba(255, 255, 255, 1);
+.advantages__logo {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+}
+
+.advantages-intro {
+  @include tablet {
+    width: 484px;
+    margin: auto;
+    text-align: center;
+  }
+}
+
+.advantages__slogan {
+  display: inline;
+}
+
+.advantages__text {
+  display: block;
+  max-width: 800px;
+}
+
+.advantages__list {
+  padding: 0;
+  margin: 0;
+
+  @include tablet {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+  }
+}
+
+.advantages__item:first-of-type {
+  @include tablet() {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+  }
+}
+
+.advantages__item:nth-of-type(2) {
+  grid-column: 1/-1;
+  grid-row: 2/3;
+}
+
+
+.advantages__item {
+  @include tablet {
+    min-width: 768px;
+    width: 100%;
+    flex-grow: 3;
+    grid-column: 1 span 1;
+    grid-row: 3/4;
+  }
+}
+
+.advantages__item:nth-child(3) {
+  @include tablet {
+    min-width: 256px;
+    width: 100%;
+    flex-grow: 1;
+  }
+}
+
+.advantages__item:nth-child(4) {
+  @include tablet {
+    min-width: 256px;
+    width: 100%;
+    flex-grow: 1;
+  }
+}
+
+.advantages__item:nth-child(5) {
+  @include tablet {
+    min-width: 256px;
+    width: 100%;
+    flex-grow: 1;
+  }
+}
+
+.advantages__columns {
+  @include tablet {
+    display: flex;
+    height: 256px;
+  }
+}
+
+.advantages-column {
+  background-color: $blue;
+  color: $white;
+  text-align: center;
+  width: auto;
+  height: auto;
+  padding-top: 40px;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-bottom: 40px;
+
+  @include tablet {
+    flex-grow: 1;
+    max-width: 400px;
+  }
+}
+
+.advantages-column--blue {
+  background-color: $grey;
+  color: #000000;
+  border-bottom: 1px solid rgba(214, 214, 214, 1);
+}
+
+.advantages-column__numbers {
+  @include fontSmall;
+}
+
+.advantages-column__depiction {
+  @include fontSmall;
+  text-transform: uppercase;
+}
+
+.advantages-img {
+  @include tablet {
+    flex-grow: 2;
+  }
 }
