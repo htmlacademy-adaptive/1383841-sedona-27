@@ -1,12 +1,26 @@
+.blank-emotions {
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.blank-emotions__title {
+  margin-left: 50%;
+  transform: translateX(-25%);
+}
+
 .blank-emotions__depiction {
   display: block;
+  width: 100%;
+  max-width: 768px;
+  margin: auto;
 
   @include fontMain;
 
   color: $black;
   background-color: $input;
+  opacity: 0.3;
   border: none;
   min-width: 279px;
   height: 150px;
-  padding-left: 16px;
+  padding: 16px;
 }

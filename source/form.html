@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>HTML Academy: Седона</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -122,7 +123,7 @@
                         <h2 class="blank-emotions__title">опишите свои эмоции:</h2>
                         <form action="send.php" method="post" class="blank-emotions-form">
                             <label for="emotions" class="visually-hidden">Ваше имя</label>
-                            <input type="text" id="emotions" name="emotions" class="blank-emotions__depiction" placeholder="Опишите подробно все свои восторги ">
+                            <textarea class="blank-emotions__depiction" placeholder="Опишите подробно все свои восторги " id="emotions"></textarea>
                         </form>
                     </div>
                     <div class="blank-submit">
@@ -152,9 +153,8 @@
                     </li>
                     <li class="main-footer__social-item">
                         <svg width="22" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="m21.44 1.622-3.17 14.944c-.239 1.055-.862 1.317-1.748.82l-4.828-3.557-2.33
-                                 2.24c-.258.259-.473.474-.97.474l.347-4.917 8.948-8.086c.39-.347-.084-.54-.604-.192L6.022 10.314 1.26
-                                  8.823C.224 8.5.205 7.787 1.476 7.29L20.104.113c.862-.323 1.617.192 1.335 1.51Z" fill="#fff" />
+                            <path d="m21.44 1.622-3.17 14.944c-.239 1.055-.862 1.317-1.748.82l-4.828-3.557-2.33 2.24c-.258.259-.473.474-.97.474l.347-4.917 8.948-8.086c.39-.347-.084-.54-.604-.192L6.022
+                                   10.314 1.26 8.823C.224 8.5.205 7.787 1.476 7.29L20.104.113c.862-.323 1.617.192 1.335 1.51Z" fill="#fff" />
                         </svg>
                         <span class="visually-hidden">телеграм</span>
                     </li>

@@ -2,6 +2,9 @@
   @include fontMain;
   padding-left: 18px;
   padding-right: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .interested__depiction {

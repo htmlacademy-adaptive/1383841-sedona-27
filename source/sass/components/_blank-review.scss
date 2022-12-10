@@ -30,14 +30,18 @@
 }
 
 .blank-review__main-info::after {
+  display: none;
   position: absolute;
-  display: block;
   content: "";
   left: 50%;
   top: 0;
   width: 1px;
   height: 338px;
   background-color: $grey;
+
+  @include tablet {
+    display: block;
+  }
 }
 
 .blank-review__legend {
