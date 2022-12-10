@@ -31,6 +31,42 @@
   }
 }
 
+.feature-item:first-child {
+  background-image: url(../../img/house-logo.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 39px 36px;
+
+  @include tablet {
+    background-position: 50% 15%;
+    background-size: auto auto;
+  }
+}
+
+.feature-item:nth-child(2) {
+  background-image: url(../../img/burger-logo.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 39px 36px;
+
+  @include tablet {
+    background-position: 50% 15%;
+    background-size: auto auto;
+  }
+}
+
+.feature-item:last-child {
+  background-image: url(../../img/gift-logo.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 39px 36px;
+
+  @include tablet {
+    background-position: 50% 15%;
+    background-size: auto auto;
+  }
+}
+
 .feature-item__depiction {
   @include fontSmall;
 }

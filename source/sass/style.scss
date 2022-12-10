@@ -14,14 +14,17 @@
 @import "components/advantages";
 @import "components/interested";
 @import "components/cards";
+@import "components/review-intro";
 @import "components/blank-review";
 @import "components/blank-emotions";
 @import "components/blank-impression";
 @import "components/blank-submit";
 @import "components/blank-site";
+@import "components/location";
 
 // Блоки и Секции
 
+@import "blocks/advantages-logo";
 @import "blocks/advantages.scss";
 @import "blocks/main-nav";
 @import "blocks/main-container";

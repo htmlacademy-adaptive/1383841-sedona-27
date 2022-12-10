@@ -7,18 +7,30 @@
   align-items: center;
 }
 
+.interested__title {
+  text-transform: uppercase;
+}
+
 .interested__depiction {
   @include fontSmall;
   text-transform: uppercase;
+  margin-bottom: 40px;
 }
 
 .interested__search {
   display: inline-block;
   text-transform: uppercase;
-  width: 284px;
+  text-decoration: none;
+  padding: 14px;
+  max-width: 284px;
+  width: 100%;
   height: 58px;
   background-color: $blue;
   color: $white;
   text-align: center;
   vertical-align: middle;
+
+  @include tablet {
+    max-width: 458px;
+  }
 }

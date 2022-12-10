@@ -10,6 +10,19 @@ $blue: rgba(129, 179, 210, 1);
   text-transform: uppercase;
   background-color: $white;
   color: $white;
+
+  @include tablet {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+.main-nav__wrapper {
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
 }
 
 .main-nav__list {
@@ -24,10 +37,23 @@ $blue: rgba(129, 179, 210, 1);
     margin: 0;
     padding: 0;
     padding-top: 18px;
-    width: 100%;
+    min-width: 208px;
+    width: auto;
     list-style-type: none;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @include desktop {
+    min-width: 318px;
+  }
+}
+
+@include tablet {
+  .main-nav__list--right {
+    display: flex;
+    margin-left: auto;
   }
 }
 
@@ -35,8 +61,7 @@ $blue: rgba(129, 179, 210, 1);
   background-color: $blue;
   color: $white;
   height: auto;
-  width: auto;
-  margin-right: 50px;
+  width: 100%;
   padding-top: 17px;
   padding-bottom: 13px;
   text-align: center;

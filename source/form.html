@@ -9,28 +9,34 @@
 
 <body>
     <header class="main-header">
-        <nav class="main-nav">
-            <ul class="main-nav__list main-nav__list--closed">
-                <li class="main-nav__item main-nav__item--active">
-                    <a href="index.html">главная</a>
-                </li>
-                <li class="main-nav__item">
-                    <a href="catalog.html">фото и видео</a>
-                </li>
-                <li class="main-nav__item">
-                    <a>форма отзыва</a>
-                </li>
-                <li class="main-nav__item">
-                    <a href="#">htmlacademy</a>
-                </li>
-            </ul>
-            <button class="main-nav__toggle" type="button">
-                <span class="visually-hidden">Открыть меню</span>
-            </button>
-            <a class="main-header__logo closed">
-                <img src="img/main-header__logo.svg" width="185" height="96" alt="Логотип Седоны">
-            </a>
-        </nav>
+        <div class="main-header__wrapper wrapper">
+            <nav class="main-nav">
+                <div class="main-nav__wrapper">
+                    <ul class="main-nav__list main-nav__list--left">
+                        <li class="main-nav__item main-nav__item--active">
+                            <a href="index.html">главная</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="catalog.html">фото и видео</a>
+                        </li>
+                    </ul>
+                    <ul class="main-nav__list main-nav__list--right">
+                        <li class="main-nav__item">
+                            <a>форма отзыва</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="#">htmlacademy</a>
+                        </li>
+                    </ul>
+                </div>
+                <a class="main-header__logo">
+                    <img src="img/main-header__logo.svg" width="185" height="96" alt="Логотип Седоны">
+                </a>
+                <button class="main-nav__toggle closed" type="button">
+                    <span class="visually-hidden">Открыть меню</span>
+                </button>
+            </nav>
+        </div>
     </header>
 
     <main class="main-container">
