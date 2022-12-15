@@ -1,4 +1,5 @@
 .advantages-logo {
+  position: relative;
   display: flex;
   justify-content: center;
   margin: auto;
@@ -14,4 +15,15 @@
                        0 0;
   background-size: 100%,
                   auto;
+
+}
+
+.advantages-logo::after {
+  position: absolute;
+  bottom: 0;
+  height: 57px;
+  display: block;
+  content: "";
+  background-image: url("../../img/arrow-main-logo.svg");
+  background-repeat: no-repeat;
 }

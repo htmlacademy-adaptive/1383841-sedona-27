@@ -11,6 +11,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
+    row-gap: 36px;
+    column-gap: 39px;
   }
 
   @include desktop {
@@ -21,6 +23,10 @@
 
 .blank-impression__item {
   margin-bottom: 36px;
+
+  @include tablet {
+    margin-bottom: 0;
+  }
 }
 
 .blank-impression__item:nth-child(3) {

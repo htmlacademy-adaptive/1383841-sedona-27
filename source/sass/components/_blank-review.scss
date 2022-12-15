@@ -18,8 +18,13 @@
   flex-direction: column;
 
   @include tablet {
-    flex-direction: row;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: calc(100%/7);
+  }
+
+  @include desktop {
+    column-gap: 128px;
   }
 }
 

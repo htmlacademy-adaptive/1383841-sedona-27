@@ -1,19 +1,27 @@
 .interested {
   @include fontMain;
   padding-left: 18px;
+  padding-top: 38px;
   padding-right: 18px;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @include tablet {
+    padding-top: 61px;
+  }
 }
 
 .interested__title {
+  margin: 0;
   text-transform: uppercase;
+  margin-bottom: 38px;
 }
 
 .interested__depiction {
   @include fontSmall;
   text-transform: uppercase;
+  margin: 0;
   margin-bottom: 40px;
 }
 

@@ -81,8 +81,18 @@
 
 .advantages__columns {
   @include tablet {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto auto;
     height: 256px;
+  }
+}
+
+.advantages__columns--reverse {
+  @include tablet {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto;
   }
 }
 
@@ -123,7 +133,10 @@
 }
 
 .advantages-img {
+
+  width: 100%;
+
   @include tablet {
-    flex-grow: 2;
+    max-height: 256px;
   }
 }
