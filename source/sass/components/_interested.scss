@@ -1,21 +1,37 @@
 .interested {
   @include fontMain;
   padding-left: 18px;
+  padding-top: 38px;
   padding-right: 18px;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @include tablet {
+    padding-top: 61px;
+  }
+}
+
+.interested__title {
+  margin: 0;
+  text-transform: uppercase;
+  margin-bottom: 38px;
 }
 
 .interested__depiction {
   @include fontSmall;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 40px;
 }
 
 .interested__search {
   display: inline-block;
   text-transform: uppercase;
   text-decoration: none;
+  padding: 14px;
+  max-width: 284px;
+  width: 100%;
   width: 284px;
   height: 58px;
   padding-top: 16px;
@@ -23,4 +39,8 @@
   color: $white;
   text-align: center;
   vertical-align: middle;
+
+  @include tablet {
+    max-width: 458px;
+  }
 }

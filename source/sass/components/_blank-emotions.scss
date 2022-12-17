@@ -1,9 +1,18 @@
+.blank-emotions {
+  padding-left: 18px;
+  padding-right: 18px;
+  text-align: center;
+}
+
+
 .blank-emotions__depiction {
   display: block;
+  width: 100%;
+  max-width: 768px;
+  margin: auto;
 
   @include fontMain;
 
-  color: $black;
   background-color: $input;
   border: none;
   min-width: 279px;
@@ -12,4 +21,9 @@
   margin: auto;
   height: 150px;
   padding: 16px;
+}
+
+.blank-emotions__depiction::placeholder {
+  color: $black;
+  opacity: 0.3;
 }

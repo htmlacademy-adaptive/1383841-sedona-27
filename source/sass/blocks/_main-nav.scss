@@ -1,52 +1,62 @@
-
-
 $white: rgba(255, 255, 255, 1);
 $blue: rgba(129, 179, 210, 1);
 
 .main-nav {
   @include fontMain;
+
+  padding-top: 96px;
   display: flex;
   position: relative;
   text-transform: uppercase;
   background-color: $white;
   color: $white;
+
+  @include tablet {
+    padding-top: 0;
+    //padding-left: 50px;
+    //padding-right: 50px;
+  }
+}
+
+.main-nav__wrapper {
+
+  width: 100%;
+
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
 }
 
 .main-nav__list {
+  position: relative;
   margin: 0;
   padding: 0;
   width: 100%;
   list-style-type: none;
   display: flex;
   flex-direction: column;
+  z-index: 100;
 
   @include tablet {
-    margin: 0;
-    padding: 0;
-    padding-top: 18px;
-    width: 100%;
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    place-items: center;
+  }
+
+  @include desktop {
+    min-width: 318px;
   }
 }
 
-.main-nav__list--right {
-  //display: block;
-
-  @include tablet {
-    margin-left: auto;
-    justify-content: space-between;
-  }
-}
 
 .main-nav__item {
   background-color: $blue;
   color: $white;
   height: auto;
-  width: auto;
-  margin-right: 50px;
+  width: 100%;
   padding-top: 17px;
   padding-bottom: 13px;
   text-align: center;
@@ -56,18 +66,31 @@ $blue: rgba(129, 179, 210, 1);
   @include tablet {
     background-color: transparent;
     color: $black;
-    height: auto;
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-top: 18px;
+    padding-bottom: 17px;
     text-align: center;
     border: none;
+    min-height: 46px;
+    //display: grid;
+    //place-items: center;
+
+    &:nth-child(4n+3) {
+      grid-column: 4 / 5;
+    }
+
+    &:nth-child(4n+4) {
+      grid-column: 5 / 6;
+    }
   }
 }
 
-.main-nav__item a {
+.main-nav__item-link {
   text-decoration: none;
   color: inherit;
+
+  font-size: 14px;
 }
+
 
 
 .main-nav__item:first-child {
@@ -78,3 +101,40 @@ $blue: rgba(129, 179, 210, 1);
   border-bottom: 1px solid linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
 }
 
+.main-nav__toggle {
+  position: relative;
+  background: transparent;
+  border: none;
+  content: "";
+  width: 22px;
+  height: 4px;
+  background-color: $blue;
+  margin-top: 26px;
+  margin-right: 20px;
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.main-nav__toggle::after {
+  position: absolute;
+  display: block;
+  top: -9px;
+  left: 0;
+  content: "";
+  width: 22px;
+  height: 4px;
+  background-color: $blue;
+}
+
+.main-nav__toggle::before {
+  position: absolute;
+  display: block;
+  top: 9px;
+  left: 0;
+  content: "";
+  width: 22px;
+  height: 4px;
+  background-color: $blue;
+}

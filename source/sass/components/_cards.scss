@@ -11,11 +11,31 @@
   }
 }
 
-.card__photo {
+.cards__item {
+  border-top: 1px solid $grey;
+  padding: 24px 20px;
+  margin: auto;
+
+  @include tablet {
+    border: none;
+    height: 347px;
+    min-width: 324px;
+    padding: 0;
+    flex-grow: 1;
+  }
+}
+
+.cards__item-photo {
   width: 100%;
 }
 
+.card__photo-img {
+  display: block;
+}
+
 .card__title {
+  text-transform: uppercase;
+  font-size: 14px;
   margin: 0;
   margin-top: 10px;
 }
@@ -33,6 +53,7 @@
 .card__author {
   @include fontSmall;
 
+  font-size: 14px;
   display: block;
   margin-top: 5px;
 }

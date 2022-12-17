@@ -14,7 +14,7 @@
 
 .posts__description {
   @include fontSmall;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
 }
@@ -31,20 +31,6 @@
   @include tablet {
     flex-direction: row;
     flex-wrap: wrap;
-  }
-}
-
-.posts__item {
-  border-top: 1px solid $grey;
-  padding: 24px 20px;
-  margin: auto;
-
-  @include tablet {
-    border: none;
-    height: 347px;
-    min-width: 324px;
-    padding: 0;
-    flex-grow: 1;
   }
 }
 

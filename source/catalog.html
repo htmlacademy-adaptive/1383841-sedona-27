@@ -8,28 +8,32 @@
 </head>
 <body>
     <header class="main-header">
-        <nav class="main-nav">
-            <ul class="main-nav__list">
-                <li class="main-nav__item main-nav__item--active">
-                    <a href="index.html">главная</a>
-                </li>
-                <li class="main-nav__item">
-                    <a>фото и видео</a>
-                </li>
-                <li class="main-nav__item">
-                    <a href="form.html">форма отзыва</a>
-                </li>
-                <li class="main-nav__item">
-                    <a href="#">htmlacademy</a>
-                </li>
-            </ul>
-            <button class="main-nav__toggle closed" type="button">
-                <span class="visually-hidden">Открыть меню</span>
-            </button>
-            <a class="main-header__logo">
-                <img src="img/main-header__logo.svg" width="185" height="96" alt="Логотип Седоны">
-            </a>
-        </nav>
+        <div class="main-header__wrapper wrapper">
+            <nav class="main-nav">
+                <div class="main-nav__wrapper">
+                    <ul class="main-nav__list main-nav__list--left">
+                        <li class="main-nav__item main-nav__item--active">
+                            <a class="main-nav__item-link" href="index.html">главная</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a class="main-nav__item-link">фото и видео</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a class="main-nav__item-link" href="form.html">форма отзыва</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a class="main-nav__item-link" href="#">htmlacademy</a>
+                        </li>
+                    </ul>
+                </div>
+                <a class="main-header__logo">
+                    <img src="img/main-header__logo.svg" width="185" height="96" alt="Логотип Седоны">
+                </a>
+                <button class="main-nav__toggle" type="button">
+                    <span class="visually-hidden">Открыть меню</span>
+                </button>
+            </nav>
+        </div>
     </header>
 
     <main class="main-container">
@@ -38,15 +42,18 @@
 
         <section class="posts">
             <div class="posts__wrapper">
+                <div class="advantages-logo">
+                    <img src="img/little-main-logo.svg" alt="логотип Седона" width="459" height="350">
+                </div>
                 <img class="sedona" src="img/sedona-catalog.svg" width="229" height="39" alt="Надпись Седона">
                     <div class="posts__intro">
                         <h2 class="posts__title">фото и видео</h2>
                         <p class="posts__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
                     </div>
-                <ul class="posts__list">
-                    <li class="posts__item card posts__item--current">
-                        <div class="card__photo">
-                            <img src="img/post-photo-1.jpg" alt="фото природы">
+                <ul class="posts__list cards">
+                    <li class="posts__item cards__item posts__item--current">
+                        <div class="cards__item-photo">
+                            <img class="card__photo-img" src="img/post-photo-1.jpg" alt="фото природы">
                         </div>
                         <div class="card-info card-info--current">
                             <div class="card-text">
@@ -65,9 +72,9 @@
                             </button>
                         </div>
                     </li>
-                    <li class="posts__item card">
-                        <div class="card__photo">
-                            <img src="img/post-photo-2.jpg" alt="фото природы">
+                    <li class="posts__item cards__item">
+                        <div class="cards__item-photo">
+                            <img class="card__photo-img" src="img/post-photo-2.jpg" alt="фото природы">
                         </div>
                         <div class="card-info">
                             <div class="card-text">
@@ -86,9 +93,9 @@
                             </button>
                         </div>
                     </li>
-                    <li class="posts__item card">
-                        <div class="card__photo">
-                            <img src="img/post-photo-3.jpg" width="280" height="280" alt="фото природы">
+                    <li class="posts__item cards__item">
+                        <div class="cards__item-photo">
+                            <img class="card__photo-img" src="img/post-photo-3.jpg" width="280" height="280" alt="фото природы">
                         </div>
                         <div class="card-info">
                             <div class="card-text">
@@ -107,9 +114,9 @@
                             </button>
                         </div>
                     </li>
-                    <li class="posts__item card">
-                        <div class="card__photo">
-                            <img src="img/post-photo-4.jpg" width="280" height="280" alt="фото природы">
+                    <li class="posts__item cards__item">
+                        <div class="cards__item-photo">
+                            <img class="card__photo-img" src="img/post-photo-4.jpg" width="280" height="280" alt="фото природы">
                         </div>
                         <div class="card-info">
                             <div class="card-text">

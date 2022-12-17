@@ -3,8 +3,26 @@
   @include fontMain;
   background-color: $white;
   text-align: center;
+  margin-top: 17px;
+
+  @include tablet {
+    margin-top: 58px;
+  }
+
+  @include tablet {
+    margin-top: 62px;
+  }
+}
+
+.doubts__title {
+  text-transform: uppercase;
+  font-size: 30px;
+  margin: 0;
+  line-height: 26px;
 }
 
 .doubts__description {
+  text-transform: uppercase;
   font-size: 18px;
+  color: rgba(51, 51, 51, 1);
 }

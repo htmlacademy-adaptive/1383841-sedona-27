@@ -1,0 +1,31 @@
+.advantages-logo {
+  position: relative;
+  text-align: center;
+  padding-top: 76px;
+  padding-bottom: 100px;
+  background-image: url("../img/main-background.jpg");
+
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+  background-color: $input;
+  overflow: hidden;
+}
+
+.advantages-logo::after {
+  position: absolute;
+  width: 1200px;
+  overflow: hidden;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 57px;
+  display: block;
+  content: "";
+  background-image: url("../img/arrow-main-logo.svg");
+  background-repeat: no-repeat;
+}
+
+.advantages-logo__picture {
+  margin: 0 auto;
+}
