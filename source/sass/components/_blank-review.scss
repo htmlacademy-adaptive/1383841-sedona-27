@@ -20,6 +20,7 @@
   @include tablet {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    justify-items: center;
     column-gap: calc(100%/7);
   }
 

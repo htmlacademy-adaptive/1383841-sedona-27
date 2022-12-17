@@ -1,6 +1,9 @@
 .blank-site {
-  padding-left: 53px;
-  padding-right: 53px;
+
+  @include tablet {
+    padding-left: 53px;
+    padding-right: 53px;
+  }
 }
 
 .blank-site__list {
@@ -26,7 +29,8 @@
   margin-bottom: 36px;
 
   @include tablet {
-  margin-bottom: 0;
+    margin-bottom: 0;
+  }
 }
 
 .blank-site__item-control {

@@ -1,6 +1,12 @@
 .blank-impression {
-  padding-left: 53px;
-  padding-right: 53px;
+  padding-top: 0px;
+
+  @include tablet {
+    padding-left: 53px;
+    padding-right: 53px;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .blank-impression__list {
@@ -33,7 +39,7 @@
   margin-bottom: 0;
 }
 
-.blank-impression__item__control {
+.blank-impression__item-control {
   display: flex;
   align-items: center;
   position: relative;

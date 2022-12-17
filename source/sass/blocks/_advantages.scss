@@ -1,19 +1,24 @@
 .advantages-intro {
+  padding-left: 18px;
+  padding-right: 18px;
+  text-align: center;
   padding-top: 47.5px;
   padding-bottom: 32px;
   @include tablet {
     width: 520px;
     margin: auto;
-    text-align: center;
   }
 }
 
 .advantages__slogan {
   text-transform: uppercase;
   display: inline;
+  font-size: 21px;
 }
 
 .advantages__text {
+  @include fontSmall;
+  font-size: 14px;
   text-transform: uppercase;
   margin: 0;
   margin-top: 35px;
@@ -24,6 +29,7 @@
 .advantages__list {
   padding: 0;
   margin: 0;
+  list-style-type: none;
 
   @include tablet {
     display: grid;

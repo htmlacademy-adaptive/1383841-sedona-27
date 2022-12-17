@@ -1,10 +1,10 @@
-
-
 $white: rgba(255, 255, 255, 1);
 $blue: rgba(129, 179, 210, 1);
 
 .main-nav {
   @include fontMain;
+
+  padding-top: 96px;
   display: flex;
   position: relative;
   text-transform: uppercase;
@@ -12,8 +12,9 @@ $blue: rgba(129, 179, 210, 1);
   color: $white;
 
   @include tablet {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-top: 0;
+    //padding-left: 50px;
+    //padding-right: 50px;
   }
 }
 
@@ -40,15 +41,9 @@ $blue: rgba(129, 179, 210, 1);
   z-index: 100;
 
   @include tablet {
-    margin: 0;
-    padding: 0;
-    min-width: 208px;
-    width: auto;
-    list-style-type: none;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(5, 1fr);
     place-items: center;
-    z-index: 1;
   }
 
   @include desktop {
@@ -56,13 +51,6 @@ $blue: rgba(129, 179, 210, 1);
   }
 }
 
-.main-nav__list--left {
-  margin-top: 56px;
-
-  @include tablet {
-    margin-top: 0;
-  }
-}
 
 .main-nav__item {
   background-color: $blue;
@@ -78,25 +66,31 @@ $blue: rgba(129, 179, 210, 1);
   @include tablet {
     background-color: transparent;
     color: $black;
-    height: auto;
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-top: 18px;
+    padding-bottom: 17px;
     text-align: center;
     border: none;
     min-height: 46px;
-    display: grid;
-    place-items: center;
+    //display: grid;
+    //place-items: center;
+
+    &:nth-child(4n+3) {
+      grid-column: 4 / 5;
+    }
+
+    &:nth-child(4n+4) {
+      grid-column: 5 / 6;
+    }
   }
 }
 
 .main-nav__item-link {
   text-decoration: none;
   color: inherit;
+
+  font-size: 14px;
 }
 
-.main-nav__item:nth-of-type(3) {
-  margin-left: auto;
-}
 
 .main-nav__item:first-child {
   border-top: none;
@@ -104,4 +98,42 @@ $blue: rgba(129, 179, 210, 1);
 
 .main-nav__item:last-child {
   border-bottom: 1px solid linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+}
+
+.main-nav__toggle {
+  position: relative;
+  background: transparent;
+  border: none;
+  content: "";
+  width: 22px;
+  height: 4px;
+  background-color: $blue;
+  margin-top: 26px;
+  margin-right: 20px;
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.main-nav__toggle::after {
+  position: absolute;
+  display: block;
+  top: -9px;
+  left: 0;
+  content: "";
+  width: 22px;
+  height: 4px;
+  background-color: $blue;
+}
+
+.main-nav__toggle::before {
+  position: absolute;
+  display: block;
+  top: 9px;
+  left: 0;
+  content: "";
+  width: 22px;
+  height: 4px;
+  background-color: $blue;
 }
