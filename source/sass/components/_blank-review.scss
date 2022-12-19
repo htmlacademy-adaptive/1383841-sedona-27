@@ -10,6 +10,11 @@
 
 .blank-review__wrapper {
   margin: auto;
+
+  @include tablet {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
 }
 
 .blank-review__main-info {
@@ -21,11 +26,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
-    column-gap: calc(100%/7);
   }
 
   @include desktop {
     column-gap: 128px;
+    justify-items: auto;
   }
 }
 
@@ -33,6 +38,35 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  padding: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0;
+  width: 100%;
+
+  @include tablet {
+    padding-right: 43px;
+    padding-left: 0;
+  }
+
+  @include desktop {
+    padding: 0;
+  }
+}
+
+.blank-review__intro::before {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  top: -50px;
+  background-color: $grey;
+  display: block;
+  content: "";
+
+  @include tablet {
+    display: none;
+  }
 }
 
 .blank-review__main-info::after {
@@ -53,24 +87,50 @@
 .blank-review__legend {
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 28px;
 }
 
 .blank-review__intro-name {
   @include fontSmall;
   text-transform: uppercase;
-  margin-bottom: 6px;
-  margin-left: 16px;
+  width: 100%;
+
+  @include desktop {
+    width: 480px;
+  }
+}
+
+.blank-review__contacts {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0;
+
+  @include tablet {
+    padding-left: 44px;
+  }
+
+  @include desktop {
+    padding: 0;
+  }
 }
 
 .blank-review__contacts-legends {
   margin-bottom: 22px;
+
+  @include tablet {
+    margin-bottom: 0;
+  }
 }
 
 .blank-review__contacts-data {
   @include fontSmall;
   text-transform: uppercase;
-  margin-left: 16px;
+  width: 100%;
 }
 
 .blank-review__label {
@@ -81,25 +141,45 @@
   color: $black;
   background-color: $input;
   border: none;
-  width: 280px;
+  width: 100%;
   height: 58px;
   padding-left: 16px;
+  margin: 0;
   margin-bottom: 16px;
 
   @include desktop {
     width: 480px;
+
   }
+}
+
+.blank-review__contacts::before {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  top: -50px;
+  margin-bottom: 20px;
+  background-color: $grey;
+  display: block;
+  content: "";
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.blank-review__contacts-legends {
 }
 
 .blank-review__tel {
   display: block;
+  width: 100%;
 
   @include fontMain;
 
   color: $black;
   background-color: $input;
   border: none;
-  width: 280px;
   height: 58px;
   padding-left: 16px;
   margin-top: 6px;

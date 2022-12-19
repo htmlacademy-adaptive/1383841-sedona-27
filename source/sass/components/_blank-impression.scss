@@ -1,11 +1,35 @@
 .blank-impression {
+  position: relative;
   padding-top: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   @include tablet {
-    padding-left: 53px;
-    padding-right: 53px;
-    display: flex;
     flex-direction: column;
+    border-top: 1px solid $grey;
+  }
+}
+
+.blank-impression::before {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  top: -40px;
+  background-color: $grey;
+  display: block;
+  content: "";
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.blank-impression__legend {
+
+  @include tablet {
+    padding-left: 66px;
+    padding-right: 66px;
   }
 }
 

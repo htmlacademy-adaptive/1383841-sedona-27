@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>HTML Academy: Седона</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon-32.ico">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -13,13 +14,13 @@
             <nav class="main-nav">
                 <div class="main-nav__wrapper">
                     <ul class="main-nav__list main-nav__list--left">
-                        <li class="main-nav__item main-nav__item--active">
+                        <li class="main-nav__item">
                             <a class="main-nav__item-link" href="index.html">главная</a>
                         </li>
                         <li class="main-nav__item">
                             <a class="main-nav__item-link" href="catalog.html">фото и видео</a>
                         </li>
-                        <li class="main-nav__item">
+                        <li class="main-nav__item main-nav__item--active">
                             <a class="main-nav__item-link">форма отзыва</a>
                         </li>
                         <li class="main-nav__item">
@@ -28,9 +29,12 @@
                     </ul>
                 </div>
                 <a class="main-header__logo">
-                    <img src="img/main-header__logo.svg" width="185" height="96" alt="Логотип Седоны">
+                    <picture>
+                        <source media="(min-width: 768px)" src="img/main-header__logo_tab.svg">
+                        <img src="img/main-header__logo.svg" alt="Логотип Седоны">
+                    </picture>
                 </a>
-                <button class="main-nav__toggle" type="button">
+                <button class="main-nav__toggle main-nav__toggle--opened" type="button">
                     <span class="visually-hidden">Открыть меню</span>
                 </button>
             </nav>
@@ -57,19 +61,24 @@
                     <div class="blank-review__main-info">
                         <fieldset class="blank-review__intro">
                             <legend class="blank-review__legend blank-review__legend">представьтесь:</legend>
-                            <label for="forename" class="blank-review__intro-name">имя*</label>
+                            <label for="forename" class="blank-review__intro-name">имя*
                                 <input type="text" id="forename" name="forename" class="blank-review__name blank-review__label" placeholder="Пётр" required>
-                            <label for="firstname" class="blank-review__intro-name">фамилия*:</label>
+                            </label>
+                            <label for="firstname" class="blank-review__intro-name">фамилия*:
                                 <input type="text" id="firstname" name="firstname" class="blank-review__name blank-review__label" placeholder="Пустота" required>
-                            <label for="patronymic" class="blank-review__intro-name">отчество*:</label>
+                            </label>
+                            <label for="patronymic" class="blank-review__intro-name">отчество*:
                                 <input type="text" id="patronymic" name="patronymic" class="blank-review__name blank-review__label" placeholder="Викторович">
+                            </label>
                         </fieldset>
                         <fieldset class="blank-review__contacts">
                             <legend class="blank-review__contacts-legends blank-review__legend">контактная информация:</legend>
-                            <label for="telephone" class="blank-review__contacts-data">контактный телефон*:</label>
+                            <label for="telephone" class="blank-review__contacts-data">контактный телефон*:
                                 <input type="tel" id="telephone" name="telephone" class="blank-review__tel blank-review__label" placeholder="Введите телефон" required>
-                            <label for="email" class="blank-review__contacts-data">электронная почта*:</label>
+                            </label>
+                            <label for="email" class="blank-review__contacts-data">электронная почта*:
                                 <input type="email" id="email" name="email" class="blank-review__email blank-review__label" placeholder="Введите e-mail" required>
+                            </label>
                         </fieldset>
                     </div>
                     <fieldset class="blank-impression">

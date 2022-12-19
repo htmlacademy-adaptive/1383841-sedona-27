@@ -2,8 +2,8 @@
   padding-left: 18px;
   padding-right: 18px;
   text-align: center;
-  padding-top: 47.5px;
-  padding-bottom: 32px; 
+  padding-top: 59px;
+  padding-bottom: 55.5px;
   @include tablet {
     width: 520px;
     margin: auto;
@@ -95,6 +95,9 @@
 }
 
 .advantages__columns--reverse {
+  display: flex;
+  flex-direction: column-reverse;
+
   @include tablet {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -116,6 +119,12 @@
   @include tablet {
     flex-grow: 1;
     max-width: 400px;
+    padding-left: 33px;
+    padding-right: 33px;
+  }
+
+  @include desktop {
+    padding: 52px 50px 51px 50px;
   }
 }
 
@@ -127,15 +136,20 @@
 
 .advantages-column__title {
   text-transform: uppercase;
+  margin-top: 0;
 }
 
 .advantages-column__numbers {
   @include fontSmall;
+  font-size: 21px;
+  line-height: 10px;
 }
 
 .advantages-column__depiction {
   @include fontSmall;
   text-transform: uppercase;
+  margin-top: 34px;
+  margin-bottom: 0;
 }
 
 .advantages-img {

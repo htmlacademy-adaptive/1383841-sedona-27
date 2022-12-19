@@ -23,6 +23,27 @@
 
 .doubts__description {
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: 21px;
+  line-height: 26px;
   color: rgba(51, 51, 51, 1);
+}
+
+.doubts__video {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @include tablet {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  @include desktop {
+    width: 800px;
+    height: 500px;
+    margin: 0 auto;
+  }
+}
+
+.doubts__video-img {
+  width: 100%;
 }

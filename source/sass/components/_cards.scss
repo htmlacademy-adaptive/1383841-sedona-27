@@ -9,12 +9,27 @@
     padding-right: 20px;
     padding-bottom: 15px;
   }
+
+  @include desktop {
+    width: 100%;
+    position: absolute;
+    top: 187px;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.card-info--current {
+  @include desktop {
+    top: 320px;
+  }
 }
 
 .cards__item {
+  position: relative;
   border-top: 1px solid $grey;
   padding: 24px 20px;
   margin: auto;
+  width: 100%;
 
   @include tablet {
     border: none;
@@ -22,6 +37,12 @@
     min-width: 324px;
     padding: 0;
     flex-grow: 1;
+    width: 100%;
+  }
+
+  @include desktop {
+    position: relative;
+    height: 267px;
   }
 }
 
@@ -31,16 +52,31 @@
 
 .card__photo-img {
   display: block;
+  width: 100%;
+
+  @include tablet {
+    height: 267px;
+  }
 }
 
-.card__title {
+.card__photo-img--current {
+  @include tablet {
+    height: 400px;
+  }
+}
+
+.card-info__text-title {
   text-transform: uppercase;
   font-size: 14px;
   margin: 0;
   margin-top: 10px;
+
+  @include desktop {
+    color: $white;
+  }
 }
 
-.card__counter {
+.card-info__counter {
   @include fontMain;
 
   display: flex;
@@ -48,12 +84,27 @@
   justify-content: space-between;
   background-color: transparent;
   border: none;
+
+  @include desktop {
+    color: $white;
+  }
 }
 
-.card__author {
+ .card-info__counter-svg {
+   @include desktop {
+     fill: $white;
+     opacity: 1;
+   }
+ }
+
+.card-info__text-author {
   @include fontSmall;
 
   font-size: 14px;
   display: block;
   margin-top: 5px;
+
+  @include desktop {
+    color: $white;
+  }
 }

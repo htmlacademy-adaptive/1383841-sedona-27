@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>HTML Academy: Седона</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon-32.ico">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -12,10 +13,10 @@
             <nav class="main-nav">
                 <div class="main-nav__wrapper">
                     <ul class="main-nav__list main-nav__list--left">
-                        <li class="main-nav__item main-nav__item--active">
+                        <li class="main-nav__item">
                             <a class="main-nav__item-link" href="index.html">главная</a>
                         </li>
-                        <li class="main-nav__item">
+                        <li class="main-nav__item main-nav__item--active">
                             <a class="main-nav__item-link">фото и видео</a>
                         </li>
                         <li class="main-nav__item">
@@ -29,7 +30,7 @@
                 <a class="main-header__logo">
                     <img src="img/main-header__logo.svg" width="185" height="96" alt="Логотип Седоны">
                 </a>
-                <button class="main-nav__toggle" type="button">
+                <button class="main-nav__toggle main-nav__toggle--opened" type="button">
                     <span class="visually-hidden">Открыть меню</span>
                 </button>
             </nav>
@@ -53,16 +54,20 @@
                 <ul class="posts__list cards">
                     <li class="posts__item cards__item posts__item--current">
                         <div class="cards__item-photo">
-                            <img class="card__photo-img" src="img/post-photo-1.jpg" alt="фото природы">
+                            <picture>
+                                <source media="(min-width: 1200px)" srcset="img/post-photo-1_des.jpg 1x, img/post-photo-1_des-2x.jpg 2x">
+                                <source media="(min-width: 768px)" srcset="img/post-photo-1_tab.jpg 1x, img/post-photo-1_tab-2x.jpg 2x">
+                                <img class="card__photo-img card__photo-img--current" src="img/post-photo-1.jpg" srcset="img/post-photo-1-2x.jpg 2x" alt="фото природы">
+                            </picture>
                         </div>
-                        <div class="card-info card-info--current">
-                            <div class="card-text">
-                                <h3 class="card__title">неродные просторы</h3>
-                                <span class="card__author">Автор фото: Борис</span>
+                        <div class="cards__item-info card-info card-info--current">
+                            <div class="card-info__text">
+                                <h3 class="card-info__text-title">неродные просторы</h3>
+                                <span class="card-info__text-author">Автор фото: Борис</span>
                             </div>
-                            <button class="card__counter" type="button">
+                            <button class="card-info__counter" type="button">
                                 <svg width="23" height="21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path opacity=".3" d="m12.964 3.78-.628 3.045-.627 2.625h9.096v2.205L17.773
+                                <path  class="card-info__counter-svg" opacity=".3" d="m12.964 3.78-.628 3.045-.627 2.625h9.096v2.205L17.773
                                                                                   18.9h-9.41V8.4l4.6-4.62ZM2.09 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.418.315-.627.84-.627
                                                                                   1.47v10.5c0 1.155.94 2.1 2.09 2.1h9.41c.836 0 1.568-.525
                                                                                   1.881-1.26l3.137-7.455c.104-.21.104-.525.104-.735v-2.1H23c0-1.155-.94-2.1-2.09-2.1h-6.587l1.045-4.83v-.315c0-.42-.209-.84-.418-1.155L13.8
@@ -74,16 +79,20 @@
                     </li>
                     <li class="posts__item cards__item">
                         <div class="cards__item-photo">
-                            <img class="card__photo-img" src="img/post-photo-2.jpg" alt="фото природы">
+                            <picture>
+                                <source media="(min-width: 1200px)" srcset="img/post-photo-2_des.jpg 1x, img/post-photo-2_des-2x.jpg 2x">
+                                <source media="(min-width: 768px)" srcset="img/post-photo-2_tab.jpg 1x, img/post-photo-2_tab-2x.jpg 2x">
+                                <img class="card__photo-img" src="img/post-photo-2.jpg" srcset="img/post-photo-2-2x.jpg 2x" alt="фото природы">
+                            </picture>
                         </div>
-                        <div class="card-info">
-                            <div class="card-text">
-                                <h3 class="card__title">местная растительность</h3>
-                                <span class="card__author">Автор фото: Сергей</span>
+                        <div class="cards__item-info card-info">
+                            <div class="card-info__text">
+                                <h3 class="card-info__text-title">местная растительность</h3>
+                                <span class="card-info__text-author">Автор фото: Сергей</span>
                             </div>
-                            <button class="card__counter" type="button">
+                            <button class="card-info__counter" type="button">
                                 <svg width="23" height="21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path opacity=".3" d="m12.964 3.78-.628 3.045-.627 2.625h9.096v2.205L17.773
+                                    <path class="card-info__counter-svg" opacity=".3" d="m12.964 3.78-.628 3.045-.627 2.625h9.096v2.205L17.773
                                                           18.9h-9.41V8.4l4.6-4.62ZM2.09 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.418.315-.627.84-.627
                                                           1.47v10.5c0 1.155.94 2.1 2.09 2.1h9.41c.836 0 1.568-.525
                                                           1.881-1.26l3.137-7.455c.104-.21.104-.525.104-.735v-2.1H23c0-1.155-.94-2.1-2.09-2.1h-6.587l1.045-4.83v-.315c0-.42-.209-.84-.418-1.155L13.8
@@ -95,16 +104,20 @@
                     </li>
                     <li class="posts__item cards__item">
                         <div class="cards__item-photo">
-                            <img class="card__photo-img" src="img/post-photo-3.jpg" width="280" height="280" alt="фото природы">
+                            <picture>
+                                <source media="(min-width: 1200px)" srcset="img/post-photo-3_des.jpg 1x, img/post-photo-3_des-2x.jpg 2x">
+                                <source media="(min-width: 768px)" srcset="img/post-photo-3_tab.jpg 1x, img/post-photo-3_tab-2x.jpg 2x">
+                                <img class="card__photo-img" src="img/post-photo-3.jpg" srcset="img/post-photo-3-2x.jpg 2x" alt="фото природы">
+                            </picture>
                         </div>
-                        <div class="card-info">
-                            <div class="card-text">
-                                <h3 class="card__title">Дорога на север</h3>
-                                <span class="card__author">Автор фото: Пётр</span>
+                        <div class="cards__item-info card-info">
+                            <div class="card-info__text">
+                                <h3 class="card-info__text-title">Дорога на север</h3>
+                                <span class="card-info__text-author">Автор фото: Пётр</span>
                             </div>
-                            <button class="card__counter" type="button">
+                            <button class="card-info__counter" type="button">
                                 <svg width="23" height="21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path opacity=".3" d="m12.964 3.78-.628 3.045-.627 2.625h9.096v2.205L17.773
+                                    <path class="card-info__counter-svg" opacity=".3" d="m12.964 3.78-.628 3.045-.627 2.625h9.096v2.205L17.773
                                                                                   18.9h-9.41V8.4l4.6-4.62ZM2.09 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.418.315-.627.84-.627
                                                                                   1.47v10.5c0 1.155.94 2.1 2.09 2.1h9.41c.836 0 1.568-.525
                                                                                   1.881-1.26l3.137-7.455c.104-.21.104-.525.104-.735v-2.1H23c0-1.155-.94-2.1-2.09-2.1h-6.587l1.045-4.83v-.315c0-.42-.209-.84-.418-1.155L13.8
@@ -116,16 +129,20 @@
                     </li>
                     <li class="posts__item cards__item">
                         <div class="cards__item-photo">
-                            <img class="card__photo-img" src="img/post-photo-4.jpg" width="280" height="280" alt="фото природы">
+                            <picture>
+                                <source media="(min-width: 1200px)" srcset="img/post-photo-4_des.jpg 1x, img/post-photo-4_des-2x.jpg 2x">
+                                <source media="(min-width: 768px)" srcset="img/post-photo-4_tab.jpg 1x, img/post-photo-4_tab-2x.jpg 2x">
+                                <img class="card__photo-img" src="img/post-photo-4.jpg" srcset="img/post-photo-4-2x.jpg 2x" alt="фото природы">
+                            </picture>
                         </div>
-                        <div class="card-info">
-                            <div class="card-text">
-                                <h3 class="card__title">Мост дьявола</h3>
-                                <span class="card__author">Автор фото: Антон</span>
+                        <div class="cards__item-info card-info">
+                            <div class="card-info__text">
+                                <h3 class="card-info__text-title">Мост дьявола</h3>
+                                <span class="card-info__text-author">Автор фото: Антон</span>
                             </div>
-                            <button class="card__counter" type="button">
+                            <button class="card-info__counter" type="button">
                                 <svg width="23" height="21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path opacity=".3" d="m12.964 3.78-.628 3.045-.627 2.625h9.096v2.205L17.773
+                                    <path class="card-info__counter-svg" opacity=".3" d="m12.964 3.78-.628 3.045-.627 2.625h9.096v2.205L17.773
                                                                                                           18.9h-9.41V8.4l4.6-4.62ZM2.09 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.418.315-.627.84-.627
                                                                                                           1.47v10.5c0 1.155.94 2.1 2.09 2.1h9.41c.836 0 1.568-.525
                                                                                                           1.881-1.26l3.137-7.455c.104-.21.104-.525.104-.735v-2.1H23c0-1.155-.94-2.1-2.09-2.1h-6.587l1.045-4.83v-.315c0-.42-.209-.84-.418-1.155L13.8
@@ -143,7 +160,12 @@
             <h2 class="doubts__title">всё ещё сомневаетесь?</h2>
             <p class="doubts__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
             <div class="doubts__video">
-              <vid src="#" alt="видеопрезентация гостиницы Седоны" />
+                <picture>
+                    <source media="(min-width: 1200px)" srcset="img/doubts-img_des.jpg 1x, img/doubts-img_des-2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/doubts-img_tab.jpg 1x, img/doubts-img_tab-2x.jpg 2x">
+                    <img class="doubts__video-img" src="img/doubts-img.jpg" alt="подложка для видеопрезентаии" srcset="img/doubts-img-2x.jpg 2x">
+                </picture>
+                <vid src="#" alt="видеопрезентация гостиницы Седоны" />
                 <button class="doubts__video-button" type="button"></button>
             </div>
         </section>

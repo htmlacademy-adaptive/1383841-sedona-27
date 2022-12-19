@@ -2,14 +2,27 @@
   position: relative;
   text-align: center;
   padding-top: 76px;
-  padding-bottom: 100px;
+  padding-bottom: 82px;
+  padding-left: 19px;
+  padding-right: 19px;
   background-image: url("../img/main-background.jpg");
 
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: cover;
   background-color: $input;
+  object-fit: cover;
   overflow: hidden;
+
+  @include tablet {
+    background-image: url("../img/main-background_tab.jpg");
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  @include desktop {
+    background-image: url("../img/main-background_des.jpg");
+  }
 }
 
 .advantages-logo::after {
