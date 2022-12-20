@@ -42,6 +42,7 @@
   padding: 0;
   padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 50px;
   margin: 0;
   width: 100%;
 
@@ -59,7 +60,7 @@
   position: absolute;
   width: 100%;
   height: 1px;
-  top: -50px;
+  top: -70px;
   background-color: $grey;
   display: block;
   content: "";
@@ -85,8 +86,10 @@
 }
 
 .blank-review__legend {
+  display: block;
   text-align: center;
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 .blank-review__intro-name {
@@ -120,7 +123,7 @@
 }
 
 .blank-review__contacts-legends {
-  margin-bottom: 22px;
+  margin-bottom: 15px;
 
   @include tablet {
     margin-bottom: 0;
@@ -153,11 +156,21 @@
   }
 }
 
+.blank-review__label:hover {
+  background-color: $grey;
+  transition-duration: 0.3s;
+}
+
+.blank-review__label:focus {
+  outline: 0;
+  outline: 4px solid $grey;
+}
+
 .blank-review__contacts::before {
   position: absolute;
   width: 100%;
   height: 1px;
-  top: -50px;
+  top: -70px;
   margin-bottom: 20px;
   background-color: $grey;
   display: block;
@@ -174,6 +187,9 @@
 .blank-review__tel {
   display: block;
   width: 100%;
+  background-image: url("../img/phone.svg"), linear-gradient(to left, #e6e6e6 58px, transparent 58px);
+  background-repeat: no-repeat;
+  background-position: right 20px center, right center;
 
   @include fontMain;
 
@@ -182,26 +198,16 @@
   border: none;
   height: 58px;
   padding-left: 16px;
-  margin-top: 6px;
-  margin-bottom: 12px;
+  margin-bottom: 18px;
 
   @include desktop {
     width: 480px;
   }
 }
 
-.blank-review__tel::after {
-  position: absolute;
-  display: block;
-  content: "";
-  width: 58px;
-  height: 58px;
-  background-color: $grey;
-  background-image: url("../../img/phone.svg");
-  top: 0;
-  left: 20%;
-}
-
 .blank-review__email {
-  margin-top: 6px;
+  background-image: url("../img/email.svg"), linear-gradient(to left, #e6e6e6 58px, transparent 58px);
+  background-repeat: no-repeat;
+  background-position: right 20px center, right center;
+  margin-bottom: 60px;
 }

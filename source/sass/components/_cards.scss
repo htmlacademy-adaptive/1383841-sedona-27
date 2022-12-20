@@ -16,6 +16,10 @@
     top: 187px;
     background-color: rgba(0, 0, 0, 0.3);
   }
+
+  @include desktop {
+    padding-left: 25px;
+  }
 }
 
 .card-info--current {
@@ -27,7 +31,7 @@
 .cards__item {
   position: relative;
   border-top: 1px solid $grey;
-  padding: 24px 20px;
+  padding: 28px 20px 27px 20px;
   margin: auto;
   width: 100%;
 
@@ -71,6 +75,10 @@
   margin: 0;
   margin-top: 10px;
 
+  @include tablet {
+    margin-top: 20px;
+  }
+
   @include desktop {
     color: $white;
   }
@@ -79,14 +87,24 @@
 .card-info__counter {
   @include fontMain;
 
+  font-size: 14px;
+  line-height: 21px;
   display: flex;
-  min-width: 70px;
   justify-content: space-between;
+  padding: 0;
+  gap: 9px;
+  min-width: 70px;
   background-color: transparent;
   border: none;
+  margin-top: 10px;
+
+  @include tablet {
+    min-width: 0px;
+  }
 
   @include desktop {
     color: $white;
+    margin-top: 15px;
   }
 }
 
@@ -102,7 +120,6 @@
 
   font-size: 14px;
   display: block;
-  margin-top: 5px;
 
   @include desktop {
     color: $white;

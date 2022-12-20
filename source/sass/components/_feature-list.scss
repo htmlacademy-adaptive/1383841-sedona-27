@@ -3,10 +3,15 @@
 
   margin: 0;
   padding: 0;
-  padding-top: 31px;
+  padding-top: 24px;
   padding-bottom: 46px;
   list-style-type: none;
   width: auto;
+
+  @include tablet {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
 
 .advantages__item__list {
@@ -31,13 +36,18 @@
     flex-grow: 1;
     text-align: center;
     padding-left: 33px;
-    padding-top: 158px;
+    padding-top: 156px;
     padding-right: 33px;
     padding-bottom: 60px;
     margin-top: 0;
-    background-position: 50% 15%;
+    background-position: 50% 24%;
     background-size: auto auto;
     width: 33%;
+  }
+
+  @include desktop {
+    padding-top: 169px;
+    background-position: 50% 27%;
   }
 }
 
@@ -56,12 +66,21 @@
 
 .feature-item__title {
   margin: 0;
-  font-size: 21px;
+  font-size: 18px;
+
+  @include tablet {
+    font-size: 21px;
+  }
 }
 
 .feature-item__depiction {
   @include fontSmall;
+  font-size: 14px;
 
   margin: 0;
   margin-top: 16px;
+
+  @include tablet {
+    margin-top: 25px;
+  }
 }

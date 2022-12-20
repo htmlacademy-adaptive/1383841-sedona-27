@@ -1,16 +1,20 @@
 .posts__intro {
   text-align: center;
-  margin-bottom: 25px;
+  padding-bottom: 32px;
+  padding-top: 36px;
+  padding-left: 20px;
+  padding-right: 20px;
 
   @include tablet {
+    padding-top: 66px;
     width: 458px;
-    margin-left: 50%;
-    transform: translateX(-50%);
-    margin-bottom: 65px;
+    margin: 0 auto;
+    margin-bottom: 27px;
   }
 
   @include desktop {
-    margin-bottom: 67px;
+    padding-top: 100px;
+    margin-bottom: 32px;
   }
 }
 
@@ -18,12 +22,24 @@
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 30px;
+
+  font-size: 18px;
+
+  @include tablet {
+    font-size: 30px;
+    line-height: 26px;
+    margin-bottom: 33px;
+  }
+
+  @include desktop {
+    margin-bottom: 30px;
+  }
 }
 
 .posts__description {
   @include fontSmall;
-  font-size: 18px;
-  line-height: 26px;
+  font-size: 14px;
+  line-height: 21px;
   text-transform: uppercase;
   margin: 0;
 }

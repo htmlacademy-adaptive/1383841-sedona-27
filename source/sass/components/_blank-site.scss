@@ -2,11 +2,14 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+  padding-left: 20px;
+  padding-right: 20px;
 
   @include tablet {
     padding-left: 53px;
     padding-right: 53px;
+    border-top: 1px solid $grey;
   }
 }
 
@@ -14,7 +17,8 @@
   position: absolute;
   width: 100%;
   height: 1px;
-  top: -50px;
+  top: -85px;
+  left: 0;
   background-color: $grey;
   display: block;
   content: "";
@@ -25,7 +29,13 @@
 }
 
 .blank-site__legend {
-  margin-bottom: 30px;
+  margin-bottom: 8px;
+
+  @include tablet {
+    width: 366px;
+    padding-left: 66px;
+    padding-right: 66px;
+  }
 }
 
 .blank-site__list {
@@ -57,9 +67,13 @@
   }
 }
 
+.blank-site__item:last-child {
+  margin-bottom: 0;
+}
+
 .blank-site__item-control {
   position: relative;
-  padding-left: 64px;
+  padding-left: 60px;
   display: flex;
   align-items: center;
 }

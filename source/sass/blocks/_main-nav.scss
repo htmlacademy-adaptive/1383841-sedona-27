@@ -1,7 +1,7 @@
 .main-nav {
   @include fontMain;
 
-  padding-top: 96px;
+  padding-top: 56px;
   display: flex;
   position: relative;
   text-transform: uppercase;
@@ -92,7 +92,14 @@
   font-size: 14px;
 }
 
+.main-nav__item-link:hover {
+  color: $blue;
+  transition-duration: 0.3s;
+}
 
+.main-nav__item-link:active {
+  opacity: 0.3;
+}
 
 .main-nav__item:first-child {
   border-top: none;

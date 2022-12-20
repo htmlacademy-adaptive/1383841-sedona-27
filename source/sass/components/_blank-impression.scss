@@ -1,9 +1,13 @@
 .blank-impression {
   position: relative;
+  padding: 0;
   padding-top: 0px;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-bottom: 40px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
 
   @include tablet {
     flex-direction: column;
@@ -15,7 +19,8 @@
   position: absolute;
   width: 100%;
   height: 1px;
-  top: -40px;
+  top: -70px;
+  left: 0;
   background-color: $grey;
   display: block;
   content: "";
@@ -26,6 +31,7 @@
 }
 
 .blank-impression__legend {
+  margin-bottom: 12px;
 
   @include tablet {
     padding-left: 66px;
