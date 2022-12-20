@@ -8,3 +8,8 @@
   @include fontMain;
   font-size: 21px;
 }
+
+.blue-form-button:hover {
+  background-color: $blue-hover;
+  transition-duration: 0.3s;
+}

@@ -2,18 +2,18 @@
 
 @import "mixins.scss";
 @import "base.scss";
-@import "utils.scss";
 @import "variables.scss";
+@import "utils.scss";
 @import "control";
 
 // Компоненты
 
-@import "components/posts";
-@import "components/advantages__columns";
+@import "components/cards";
 @import "components/feature-list";
 @import "components/interested";
-@import "components/cards";
+@import "components/posts";
 @import "components/review-intro";
+@import "components/intro-name";
 @import "components/blank-review";
 @import "components/blank-emotions";
 @import "components/blank-impression";
@@ -33,6 +33,7 @@
 @import "blocks/doubts";
 @import "blocks/posts";
 @import "blocks/blue-form-button";
+@import "blocks/media-item";
 
 //скрытие блоков
 

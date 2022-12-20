@@ -1,28 +1,56 @@
 .interested {
   @include fontMain;
   padding-left: 18px;
-  padding-top: 38px;
+  padding-top: 35px;
   padding-right: 18px;
+  padding-bottom: 51px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
+  background-color: $white;
 
   @include tablet {
-    padding-top: 61px;
+    padding-top: 55px;
+    margin: 0 auto;
+    width: 458px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 60px;
+  }
+
+  @include desktop {
+    padding-bottom: 65px;
   }
 }
 
 .interested__title {
   margin: 0;
   text-transform: uppercase;
-  margin-bottom: 38px;
+  margin-bottom: 20px;
+  font-size: 21px;
+
+  @include tablet {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
 }
 
 .interested__depiction {
   @include fontSmall;
+
+  line-height: 18px;
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 40px;
+
+  @include tablet {
+    line-height: 21px;
+  }
+
+  @include desktop {
+    margin-bottom: 45px;
+  }
 }
 
 .interested__search {
@@ -30,8 +58,6 @@
   text-transform: uppercase;
   text-decoration: none;
   padding: 14px;
-  max-width: 284px;
-  width: 100%;
   width: 284px;
   height: 58px;
   padding-top: 16px;
@@ -42,5 +68,16 @@
 
   @include tablet {
     max-width: 458px;
+    width: 100%;
   }
+}
+
+.interested__search:hover {
+  background-color: $blue-hover;
+  transition-duration: 0.3s;
+}
+
+.interested__search:active {
+  background-color: $blue-active;
+  color: rgba(255, 255, 255, 0.3);
 }

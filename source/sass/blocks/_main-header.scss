@@ -1,14 +1,11 @@
-.main-header {
-  width: 100%;
-  max-width: 1200px;
-}
-
 .main-header__logo {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   margin: auto;
   top: 0;
+  width: 185px;
+  z-index: 10;
 
   @include tablet {
     z-index: 100;

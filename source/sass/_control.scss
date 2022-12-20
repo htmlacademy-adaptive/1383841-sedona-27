@@ -4,6 +4,16 @@
   width: 46px;
   height: 46px;
   background-color: $input;
+  pointer-events: none;
+}
+
+.control-mark:hover {
+  background-color: $grey;
+  transition-duration: 0.3s;
+}
+
+.control-mark:active {
+  background-color: $grey-active;
 }
 
 .control-input[type="radio"] + .control-mark {
@@ -23,12 +33,17 @@
   border-radius: 50%;
 }
 
+.control-input[type="radio"]:checked:active + .control-mark::before {
+  opacity: 0.3;
+}
+
 .control-input[type="checkbox"]:checked + .control-mark {
   background-image: url("../img/tick.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  pointer-event: 0;
 }
 
 .control-label {
-  margin-left: 36px;
+  margin-left: 16px;
 }

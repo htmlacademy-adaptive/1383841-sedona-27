@@ -1,10 +1,7 @@
-$white: rgba(255, 255, 255, 1);
-$blue: rgba(129, 179, 210, 1);
-
 .main-nav {
   @include fontMain;
 
-  padding-top: 96px;
+  padding-top: 56px;
   display: flex;
   position: relative;
   text-transform: uppercase;
@@ -13,8 +10,6 @@ $blue: rgba(129, 179, 210, 1);
 
   @include tablet {
     padding-top: 0;
-    //padding-left: 50px;
-    //padding-right: 50px;
   }
 }
 
@@ -66,8 +61,8 @@ $blue: rgba(129, 179, 210, 1);
   @include tablet {
     background-color: transparent;
     color: $black;
-    padding-top: 18px;
-    padding-bottom: 17px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     text-align: center;
     border: none;
     min-height: 46px;
@@ -84,6 +79,12 @@ $blue: rgba(129, 179, 210, 1);
   }
 }
 
+.main-nav__item--active {
+  @include tablet {
+    color: rgba(118, 99, 87, 1);
+  }
+}
+
 .main-nav__item-link {
   text-decoration: none;
   color: inherit;
@@ -91,7 +92,14 @@ $blue: rgba(129, 179, 210, 1);
   font-size: 14px;
 }
 
+.main-nav__item-link:hover {
+  color: $blue;
+  transition-duration: 0.3s;
+}
 
+.main-nav__item-link:active {
+  opacity: 0.3;
+}
 
 .main-nav__item:first-child {
   border-top: none;
@@ -117,6 +125,15 @@ $blue: rgba(129, 179, 210, 1);
   }
 }
 
+.main-nav__toggle--opened {
+  position: absolute;
+  background-color: $white;
+  width: 26px;
+  left: 90%;
+  transform: rotate(45deg);
+  z-index: 100;
+}
+
 .main-nav__toggle::after {
   position: absolute;
   display: block;
@@ -128,6 +145,10 @@ $blue: rgba(129, 179, 210, 1);
   background-color: $blue;
 }
 
+.main-nav__toggle--opened::after {
+  display: none;
+}
+
 .main-nav__toggle::before {
   position: absolute;
   display: block;
@@ -137,4 +158,12 @@ $blue: rgba(129, 179, 210, 1);
   width: 22px;
   height: 4px;
   background-color: $blue;
+}
+
+.main-nav__toggle--opened::before {
+  background-color: $white;
+  transform: rotate(-90deg);
+  top: -0.5px;
+  width: 26px;
+  z-index: 100;
 }

@@ -1,8 +1,11 @@
 .main-footer {
-  padding-top: 38px;
+  background-color: $white;
+  width: 100%;
 
   @include tablet {
     padding-top: 0;
+    width: 100%;
+    background-color: $white;
   }
 }
 
@@ -24,16 +27,24 @@
     min-width: 650px;
     margin-bottom: 0;
   }
+
+  @include desktop {
+    width: 960px;
+    padding-top: 5px;
+  }
 }
 
 .main-footer__link {
   text-transform: uppercase;
+  font-size: 21px;
 }
 
 .main-footer__social-list {
   list-style-type: none;
   text-align: center;
   padding: 0;
+  margin-top: 33.5px;
+  margin-bottom: 40px;
   display: flex;
 }
 
@@ -46,6 +57,11 @@
   margin-right: 6px;
 }
 
+.main-footer__social-item:hover {
+  background-color: $blue-hover;
+  transition-duration: 0.3s;
+}
+
 .main-footer__copyrights {
   display: flex;
   align-items: center;
@@ -55,6 +71,14 @@
   font-size: 14px;
 }
 
+.main-footer__copyrights:hover {
+  color: $blue-hover;
+}
+
 .main-footer__copyrights-logo {
   margin-left: 13px;
+}
+
+.main-footer_-copyrights-logo:hover {
+  fill: none;
 }
