@@ -35,6 +35,8 @@
     width: 366px;
     padding-left: 66px;
     padding-right: 66px;
+    margin: 0;
+    margin-bottom: 35px;
   }
 }
 
@@ -64,6 +66,7 @@
 
   @include tablet {
     margin-bottom: 0;
+    width: 224px;
   }
 }
 

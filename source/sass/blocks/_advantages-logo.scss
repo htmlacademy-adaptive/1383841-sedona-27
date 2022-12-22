@@ -56,10 +56,20 @@
   @include tablet {
     padding-top: 95px;
     padding-bottom: 107.4px;
+    padding-right: 154.1px;
+    padding-left: 157px;
   }
 
   @include desktop {
     padding-top: 101px;
     padding-bottom: 115px;
+    padding-right: 371px;
+    padding-left: 369px;
+  }
+}
+
+.advantages-logo__svg {
+  @include tablet {
+    width: 100%;
   }
 }

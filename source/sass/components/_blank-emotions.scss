@@ -4,9 +4,11 @@
   padding-right: 18px;
   text-align: center;
 
-  //@include tablet {
-  //  border-top: 1px solid $grey;
-  //}
+  @include tablet {
+    margin-top: 25px;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .blank-emotions__title {
@@ -14,6 +16,12 @@
   font-size: 18px;
   line-height: 26px;
   margin-bottom: 20px;
+
+  @include tablet {
+    margin: 0;
+    font-size: 21px;
+    margin-bottom: 28px;
+  }
 }
 
 .blank-emotions__depiction {
@@ -30,7 +38,7 @@
   width: 100%;
   max-width: 648px;
   margin: auto;
-  height: 150px;
+  height: 160px;
   padding: 16px;
 }
 
