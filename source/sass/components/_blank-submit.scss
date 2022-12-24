@@ -4,20 +4,32 @@
   display: flex;
   flex-direction: column;
   margin-top: 55px;
-  margin-bottom: 50px;
+  padding-bottom: 50px;
 
   @include tablet {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 45px;
+    padding-bottom: 65px;
   }
 }
 
 .blank-submit__depiction {
+  text-transform: uppercase;
   align-self: end;
 
   @include tablet {
     align-self: center;
+
+    @include fontSmall;
+
+    font-size: 14px;
+    line-height: 26px;
+
+    margin-top: 10px;
   }
 }
 

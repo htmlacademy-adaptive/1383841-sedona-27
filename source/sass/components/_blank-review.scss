@@ -49,10 +49,11 @@
   @include tablet {
     padding-right: 43px;
     padding-left: 0;
+    padding-bottom: 48px;
   }
 
   @include desktop {
-    padding: 0;
+
   }
 }
 
@@ -90,6 +91,12 @@
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 20px;
+
+  @include tablet {
+    font-size: 21px;
+    margin-left: 20px;
+    margin-bottom: 28px;
+  }
 }
 
 .blank-review__intro-name {
@@ -115,6 +122,7 @@
 
   @include tablet {
     padding-left: 44px;
+    padding-right: 0px;
   }
 
   @include desktop {
@@ -126,7 +134,10 @@
   margin-bottom: 15px;
 
   @include tablet {
-    margin-bottom: 0;
+    margin: 0;
+    margin-bottom: 28px;
+    width: 280px;
+    white-space: nowrap;
   }
 }
 
