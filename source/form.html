@@ -32,8 +32,7 @@
                     </div>
                     <a class="main-header__logo">
                         <picture>
-                            <source media="(min-width: 768px)" src="img/main-header__logo_tab.svg">
-                            <img src="img/main-header__logo.svg" alt="Логотип Седоны">
+                            <img src="img/main-header__logo.svg" width="185" height="96" alt="Логотип Седоны">
                         </picture>
                     </a>
                     <button class="main-nav__toggle main-nav__toggle--opened" type="button">
@@ -145,14 +144,28 @@
                         </fieldset>
                         <fieldset class="blank-emotions">
                             <h2 class="blank-emotions__title">опишите свои эмоции:</h2>
-                            <form action="send.php" method="post" class="blank-emotions-form">
-                                <label for="emotions" class="visually-hidden">Ваше имя</label>
-                                <textarea class="blank-emotions__depiction" placeholder="Опишите подробно все свои восторги " id="emotions"></textarea>
-                            </form>
+                            <label for="emotions" class="visually-hidden">Ваше имя</label>
+                            <textarea class="blank-emotions__depiction" placeholder="Опишите подробно все свои восторги " id="emotions"></textarea>
                         </fieldset>
                         <div class="blank-submit">
                             <button class="blank-submit__button blue-form-button" type="submit">отправить отзыв</button>
                             <span class="blank-submit__depiction">* — обязательные поля</span>
+                        </div>
+                        <div class="modal-form closed">
+                            <div class="modal-form__block form-success">
+                                <h3 class="form-success__title">Ваш отзыв отправлен!</h3>
+                                <p class="form-success__depiction">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы опубликуем его на сайте.</p>
+                                <div class="form-success__block">
+                                    <button class="form-success__block-button blue-form-button">Закрыть окно</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-form closed">
+                            <div class="modal-form__block form-failure">
+                                <h3 class="form-failure__title">Что-то пошло не так!</h3>
+                                <p class="form-failure__depiction">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+                                <button class="form-failure__button blue-form-button">ок</button>
+                            </div>
                         </div>
                     </div>
                 </form>

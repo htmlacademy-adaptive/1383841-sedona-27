@@ -1,0 +1,64 @@
+
+.feature-item {
+  padding-left: 65px;
+  padding-right: 18px;
+  padding-top: 6px;
+  margin-top: 27.55px;
+  text-transform: uppercase;
+  height: auto;
+  background-repeat: no-repeat;
+  background-position: 18.5px 0;
+  background-size: 39px 36px;
+
+  @include tablet {
+    flex-grow: 1;
+    text-align: center;
+    padding-left: 33px;
+    padding-top: 156px;
+    padding-right: 33px;
+    padding-bottom: 60px;
+    margin-top: 0;
+    background-position: 50% 24%;
+    background-size: auto auto;
+    width: 33%;
+  }
+
+  @include desktop {
+    padding-top: 169px;
+    background-position: 50% 27%;
+  }
+}
+
+.feature-item--home {
+  background-image: url("../../img/house-logo.svg");
+  margin-top: 0;
+}
+
+.feature-item--food {
+  background-image: url("../../img/burger-logo.svg");
+}
+
+.feature-item--surprise {
+  background-image: url("../../img/gift-logo.svg");
+}
+
+.feature-item__title {
+  margin: 0;
+  font-size: 18px;
+
+  @include tablet {
+    font-size: 21px;
+  }
+}
+
+.feature-item__depiction {
+  @include fontSmall;
+  font-size: 14px;
+
+  margin: 0;
+  margin-top: 16px;
+
+  @include tablet {
+    margin-top: 25px;
+  }
+}

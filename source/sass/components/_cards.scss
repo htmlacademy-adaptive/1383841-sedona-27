@@ -32,9 +32,3 @@
     height: 267px;
   }
 }
-
-.card__photo-img--current {
-  @include tablet {
-    height: 400px;
-  }
-}

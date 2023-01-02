@@ -19,8 +19,7 @@
   }
 }
 
-.blank-emotions:before {
-
+.blank-emotions::before {
   @include desktop {
     display: block;
     position: absolute;
@@ -65,9 +64,7 @@
   background-color: $input;
   border: none;
   min-width: 279px;
-  width: 100%;
   max-width: 648px;
-  margin: auto;
   height: 150px;
   padding: 16px;
 

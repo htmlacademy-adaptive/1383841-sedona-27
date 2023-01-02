@@ -1,14 +1,16 @@
 // Начните писать стили здесь
 
 @import "mixins.scss";
-@import "base.scss";
 @import "variables.scss";
+@import "base.scss";
 @import "utils.scss";
 @import "control";
 
 // Компоненты
 
+@import "components/advantages-intro";
 @import "components/cards";
+@import "components/photo-block";
 @import "components/card-info";
 @import "components/feature-list";
 @import "components/interested";
@@ -21,6 +23,8 @@
 @import "components/blank-submit";
 @import "components/blank-site";
 @import "components/location";
+@import "components/form-success";
+@import "components/form-failure";
 
 // Блоки и Секции
 
@@ -30,12 +34,14 @@
 @import "blocks/advantages-img";
 @import "blocks/main-nav";
 @import "blocks/main-container";
+@import "blocks/feature-item";
 @import "blocks/main-footer";
 @import "blocks/main-header";
 @import "blocks/doubts";
 @import "blocks/posts";
 @import "blocks/blue-form-button";
 @import "blocks/media-item";
+@import "blocks/modal-form";
 
 //скрытие блоков
 

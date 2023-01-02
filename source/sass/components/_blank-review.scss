@@ -3,11 +3,6 @@
   background-color: $white;
 }
 
-.blank-form {
-  @include fontMain;
-  background-color: $white;
-}
-
 .blank-review__wrapper {
   margin: auto;
 
@@ -130,7 +125,7 @@
 
   @include tablet {
     padding-left: 44px;
-    padding-right: 0px;
+    padding-right: 0;
   }
 
   @include desktop {
@@ -181,7 +176,6 @@
 }
 
 .blank-review__label:focus {
-  outline: 0;
   outline: 4px solid $grey;
 }
 

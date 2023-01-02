@@ -54,7 +54,7 @@
   margin-top: 10px;
 
   @include tablet {
-    min-width: 0px;
+    min-width: 0;
   }
 
   @include desktop {
@@ -63,12 +63,12 @@
   }
 }
 
- .card-info__counter-svg {
-   @include desktop {
-     fill: $white;
-     opacity: 1;
-   }
- }
+.card-info__counter-svg {
+  @include desktop {
+    fill: $white;
+    opacity: 1;
+  }
+}
 
 .card-info__text-author {
   @include fontSmall;
