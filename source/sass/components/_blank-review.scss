@@ -31,6 +31,8 @@
   @include desktop {
     column-gap: 128px;
     justify-items: auto;
+    width: 960px;
+    margin: 0 auto;
   }
 }
 
@@ -53,7 +55,9 @@
   }
 
   @include desktop {
-
+    padding: 0;
+    padding-bottom: 57px;
+    width: 410px;
   }
 }
 
@@ -84,6 +88,10 @@
   @include tablet {
     display: block;
   }
+
+  @include desktop {
+    left: 493px;
+  }
 }
 
 .blank-review__legend {
@@ -105,7 +113,7 @@
   width: 100%;
 
   @include desktop {
-    width: 480px;
+    width: 430px;
   }
 }
 
@@ -127,6 +135,7 @@
 
   @include desktop {
     padding: 0;
+    width: 402px;
   }
 }
 
@@ -162,8 +171,7 @@
   margin-bottom: 16px;
 
   @include desktop {
-    width: 480px;
-
+    width: 430px;
   }
 }
 
@@ -192,9 +200,6 @@
   }
 }
 
-.blank-review__contacts-legends {
-}
-
 .blank-review__tel {
   display: block;
   width: 100%;
@@ -212,7 +217,7 @@
   margin-bottom: 18px;
 
   @include desktop {
-    width: 480px;
+    width: 402px;
   }
 }
 
@@ -221,4 +226,8 @@
   background-repeat: no-repeat;
   background-position: right 20px center, right center;
   margin-bottom: 60px;
+
+  @include desktop {
+    width: 402px;
+  }
 }

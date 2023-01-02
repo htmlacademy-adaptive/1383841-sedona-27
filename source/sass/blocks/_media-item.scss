@@ -1,3 +1,43 @@
-.media-item__logo:active {
+.media-item {
+  position: relative;
+}
+
+.media-item:hover {
+  background-color: $blue-hover;
+  transition-duration: 0.3s;
+}
+
+.media-item:active {
+  background-color: $blue-down;
+}
+
+.media-item::before {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 24px;
+  height: 14px;
+  background-image: url("../img/vk.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  z-index: 1;
+}
+
+.media-item--vk::before {
+  background-image: url("../img/vk.svg");
+}
+
+.media-item--tg::before {
+  background-image: url("../img/telegram.svg");
+  width: 21px;
+  height: 18px;
+}
+
+.media-item--yt::before {
+  background-image: url("../img/youtube.svg");
+  width: 20px;
+}
+
+.media-item:active + .media-item::before {
   opacity: 0.1;
 }
