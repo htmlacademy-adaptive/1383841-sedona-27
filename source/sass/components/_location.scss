@@ -1,8 +1,13 @@
 .location {
   margin: auto;
+  margin-bottom: 37px;
   padding-bottom: 5px;
   background-color: white;
   height: 350px;
+
+  @include tablet {
+    margin-bottom: 0;
+  }
 }
 
 .location__map {

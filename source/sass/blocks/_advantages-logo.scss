@@ -52,19 +52,22 @@
   padding-left: 45px;
   padding-right: 45px;
   padding-bottom: 60px;
+  background-image: url("../img/background-mobile.jpg");
 
   @include tablet {
     padding-top: 95px;
     padding-bottom: 107.4px;
     padding-right: 154.1px;
     padding-left: 157px;
-  }
+    background-image: url("../img/background-tablet.jpg");
+}
 
   @include desktop {
     padding-top: 101px;
     padding-bottom: 115px;
     padding-right: 371px;
     padding-left: 369px;
+    background-image: url("../img/background-desktop.jpg");
   }
 }
 

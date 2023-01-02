@@ -51,16 +51,16 @@
   }
 }
 
-.feature-item:first-child {
+.feature-item--home {
   background-image: url(../../img/house-logo.svg);
   margin-top: 0;
 }
 
-.feature-item:nth-child(2) {
+.feature-item--food {
   background-image: url(../../img/burger-logo.svg);
 }
 
-.feature-item:last-child {
+.feature-item--surprise {
   background-image: url(../../img/gift-logo.svg);
 }
 

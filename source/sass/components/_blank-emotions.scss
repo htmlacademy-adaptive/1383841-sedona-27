@@ -9,6 +9,28 @@
     padding-left: 0;
     padding-right: 0;
   }
+
+  @include desktop {
+    position: relative;
+    padding-bottom: 48px;
+    width: 960px;
+    margin: 0 auto;
+    margin-top: 70px;
+  }
+}
+
+.blank-emotions:before {
+
+  @include desktop {
+    display: block;
+    position: absolute;
+    content: "";
+    top: 27px;
+    width: 960px;
+    height: 1px;
+    background-color: $grey;
+    z-index: 1;
+  }
 }
 
 .blank-emotions__title {
@@ -22,12 +44,20 @@
     font-size: 21px;
     margin-bottom: 28px;
   }
+
+  @include desktop {
+    width: 400px;
+    margin: 0 auto;
+    margin-bottom: 28px;
+    background-color: $white;
+    position: relative;
+    z-index: 2;
+  }
 }
 
 .blank-emotions__depiction {
   display: block;
   width: 100%;
-  max-width: 768px;
   margin: auto;
 
   @include fontMain;
@@ -38,8 +68,13 @@
   width: 100%;
   max-width: 648px;
   margin: auto;
-  height: 160px;
+  height: 150px;
   padding: 16px;
+
+  @include tablet {
+    max-width: 768px;
+    height: 160px;
+  }
 }
 
 .blank-emotions__depiction:hover {

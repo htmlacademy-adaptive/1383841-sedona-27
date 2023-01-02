@@ -9,6 +9,7 @@
 // Компоненты
 
 @import "components/cards";
+@import "components/card-info";
 @import "components/feature-list";
 @import "components/interested";
 @import "components/posts";
@@ -25,6 +26,7 @@
 
 @import "blocks/advantages-logo";
 @import "blocks/advantages.scss";
+@import "blocks/advantages-column";
 @import "blocks/advantages-img";
 @import "blocks/main-nav";
 @import "blocks/main-container";

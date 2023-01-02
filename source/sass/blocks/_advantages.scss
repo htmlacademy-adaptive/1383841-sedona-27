@@ -86,6 +86,8 @@
   background-color: $grey;
 
   @include tablet {
+    display: grid;
+    place-items: center;
     min-width: 256px;
     width: 100%;
     padding-left: 33px;
@@ -113,21 +115,6 @@
 }
 
 
-//.advantages__columns:first-child::after {
-//  position: absolute;
-//  display: block;
-//  content: "";
-//  top: 0;
-//  width: 768px;
-//  overflow: hidden;
-//  left: 50%;
-//  transform: translateX(-25%);
-//  height: 37px;
-//  background-image: url("../img/arrow-bottom--blue.svg");
-//  background-repeat: no-repeat;
-//  background-size: 100%;
-//}
-
 .advantages__columns--reverse {
   display: flex;
   flex-direction: column-reverse;
@@ -136,83 +123,6 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: auto auto;
-  }
-}
-
-.advantages-column {
-  background-color: $blue;
-  color: $white;
-  text-align: center;
-  width: auto;
-  height: auto;
-  padding-top: 33px;
-  padding-left: 18px;
-  padding-right: 18px;
-  padding-bottom: 40px;
-
-  @include tablet {
-    flex-grow: 1;
-    max-width: 400px;
-    padding-left: 33px;
-    padding-right: 33px;
-    padding-top: 52px;
-    padding-bottom: 30px;
-  }
-
-  @include desktop {
-    padding: 52px 50px 51px 50px;
-  }
-}
-
-.advantages-column--blue {
-  background-color: $grey;
-  color: #000000;
-  padding: 0;
-  padding-top: 26px;
-  padding-bottom: 24px;
-  border-bottom: 1px solid rgba(214, 214, 214, 1);
-
-  @include tablet {
-    padding-top: 52px;
-    padding-bottom: 52px;
-    border: 0;
-  }
-
-  @include desktop {
-    padding-top: 63px;
-    padding-bottom: 41px;
-  }
-}
-
-
-.advantages-column__title {
-  text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 11px;
-  font-size: 18px;
-  text-align: center;
-
-  @include tablet {
-    font-size: 21px;
-  }
-}
-
-.advantages-column__numbers {
-  @include fontSmall;
-  font-size: 14px;
-  line-height: 21px;
-}
-
-.advantages-column__depiction {
-  @include fontSmall;
-  font-size: 14px;
-  text-transform: uppercase;
-  margin-top: 12px;
-  margin-bottom: 0;
-
-  @include tablet {
-    margin-top: 22px;
-    font-size: 13px;
   }
 }
 
