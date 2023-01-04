@@ -4,6 +4,7 @@
   padding-left: 18px;
   padding-right: 18px;
   padding-bottom: 35px;
+  margin-top: 25px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -25,20 +26,6 @@
   }
 }
 
-.blank-impression::before {
-  position: absolute;
-  width: 100%;
-  height: 1px;
-  top: -70px;
-  left: 0;
-  background-color: $grey;
-  display: block;
-  content: "";
-
-  @include tablet {
-    display: none;
-  }
-}
 
 .blank-impression__legend {
   margin-bottom: 30px;

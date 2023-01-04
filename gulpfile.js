@@ -32,13 +32,12 @@ export const styles = () => {
 const html = () => {
   return gulp.src('source/*.html')
     .pipe(gulp.dest('build'));
-  done();
 }
 
 // Scripts
 
 const scripts = () => {
-  return gulp.src('source/js/script.js', {allowEmpty: true})
+  return gulp.src('source/js/*.js', {allowEmpty: true})
     .pipe(gulp.dest('build/js'))
     .pipe(browser.stream());
 }

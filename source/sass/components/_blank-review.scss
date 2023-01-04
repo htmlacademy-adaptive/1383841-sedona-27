@@ -39,14 +39,16 @@
   padding: 0;
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 50px;
+  padding-bottom: 23px;
   margin: 0;
   width: 100%;
+  border-bottom: 1px solid $grey;
 
   @include tablet {
     padding-right: 43px;
     padding-left: 0;
     padding-bottom: 48px;
+    border-bottom: 0;
   }
 
   @include desktop {
@@ -121,11 +123,16 @@
   padding: 0;
   padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 30px;
   margin: 0;
+  margin-top: 25px;
+  border-bottom: 1px solid $grey;
 
   @include tablet {
     padding-left: 44px;
     padding-right: 0;
+    border-bottom: 0;
+    margin-top: 0;
   }
 
   @include desktop {
@@ -135,7 +142,7 @@
 }
 
 .blank-review__contacts-legends {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 
   @include tablet {
     margin: 0;
@@ -179,21 +186,6 @@
   outline: 4px solid $grey;
 }
 
-.blank-review__contacts::before {
-  position: absolute;
-  width: 100%;
-  height: 1px;
-  top: -70px;
-  margin-bottom: 20px;
-  background-color: $grey;
-  display: block;
-  content: "";
-
-  @include tablet {
-    display: none;
-  }
-}
-
 .blank-review__tel {
   display: block;
   width: 100%;
@@ -219,7 +211,7 @@
   background-image: url("../img/email.svg"), linear-gradient(to left, #e6e6e6 58px, transparent 58px);
   background-repeat: no-repeat;
   background-position: right 20px center, right center;
-  margin-bottom: 60px;
+  margin: 0;
 
   @include desktop {
     width: 402px;

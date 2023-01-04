@@ -2,12 +2,12 @@
   @include tablet {
     display: flex;
     justify-content: space-between;
-    height: 80px;
+    min-height: 80px;
     align-items: center;
     background-color: rgba(242, 242, 242, 1);
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 15px;
+    padding-bottom: 13px;
   }
 
   @include desktop {

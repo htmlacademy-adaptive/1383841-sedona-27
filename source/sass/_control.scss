@@ -7,6 +7,11 @@
   pointer-events: none;
 }
 
+.control:hover + .control-mark {
+  background-color: $grey;
+  transition-duration: 0.3s;
+}
+
 .control-mark:hover {
   background-color: $grey;
   transition-duration: 0.3s;

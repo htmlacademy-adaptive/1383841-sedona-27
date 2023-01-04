@@ -32,14 +32,26 @@
 .feature-item--home {
   background-image: url("../../img/house-logo.svg");
   margin-top: 0;
+
+  @include desktop {
+    background-size: 79px 72px;
+  }
 }
 
 .feature-item--food {
   background-image: url("../../img/burger-logo.svg");
+
+  @include desktop {
+    background-size: 73px 68px;
+  }
 }
 
 .feature-item--surprise {
   background-image: url("../../img/gift-logo.svg");
+
+  @include desktop {
+    background-size: 77px 75px;
+  }
 }
 
 .feature-item__title {

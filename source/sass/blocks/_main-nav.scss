@@ -1,12 +1,13 @@
 .main-nav {
   @include fontMain;
 
-  padding-top: 56px;
+  // padding-top: 56px;
   display: flex;
   position: relative;
   text-transform: uppercase;
   background-color: $white;
   color: $white;
+  min-height: 56px;
 
   @include tablet {
     padding-top: 0;
@@ -26,16 +27,19 @@
 }
 
 .main-nav__list {
-  position: relative;
+  position: absolute;
+  transform: translateY(-100%);
+  transition-duration: 0.3s;
   margin: 0;
   padding: 0;
   width: 100%;
-  list-style-type: none;
   display: flex;
+  list-style-type: none;
   flex-direction: column;
-  z-index: 100;
+  z-index: 3;
 
   @include tablet {
+    position: relative;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     place-items: center;
@@ -46,6 +50,12 @@
   }
 }
 
+.main-nav__list--tablet {
+  @include tablet {
+    transform: translateY(0);
+    transition-duration: 0.5s;
+  }
+}
 
 .main-nav__item {
   background-color: $blue;
@@ -109,13 +119,15 @@
 
 .main-nav__toggle {
   position: relative;
-  background: transparent;
-  border: none;
-  content: "";
+  background: 0 0;
+  transition-duration: 0.5s;
+  border: 0;
+  margin-top: 26px;
+  margin-bottom: 26px;
   width: 22px;
   height: 4px;
-  background-color: $blue;
-  margin-top: 26px;
+  background-color: #81b3d2;
+  margin-left: auto;
   margin-right: 20px;
 
   @include tablet {
@@ -129,7 +141,7 @@
   width: 26px;
   left: 90%;
   transform: rotate(45deg);
-  z-index: 100;
+  z-index: 4;
 }
 
 .main-nav__toggle::after {
@@ -140,7 +152,7 @@
   content: "";
   width: 22px;
   height: 4px;
-  background-color: $blue;
+  background-color: inherit;
 }
 
 .main-nav__toggle--opened::after {

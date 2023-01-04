@@ -2,12 +2,14 @@
   padding-top: 15px;
   padding-left: 18px;
   padding-right: 18px;
+  margin-top: 24px;
   text-align: center;
 
   @include tablet {
     margin-top: 25px;
     padding-left: 0;
     padding-right: 0;
+    border-top: 1px solid $grey;
   }
 
   @include desktop {
@@ -36,12 +38,13 @@
   text-transform: uppercase;
   font-size: 18px;
   line-height: 26px;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 
   @include tablet {
     margin: 0;
     font-size: 21px;
-    margin-bottom: 28px;
+    margin-bottom: 18px;
+    width: 402px;
   }
 
   @include desktop {
