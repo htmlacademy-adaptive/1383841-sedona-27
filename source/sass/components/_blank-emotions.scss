@@ -6,7 +6,7 @@
   text-align: center;
 
   @include tablet {
-    margin-top: 25px;
+    margin-top: 20px;
     padding-left: 0;
     padding-right: 0;
     border-top: 1px solid $grey;
@@ -17,20 +17,7 @@
     padding-bottom: 48px;
     width: 960px;
     margin: 0 auto;
-    margin-top: 70px;
-  }
-}
-
-.blank-emotions::before {
-  @include desktop {
-    display: block;
-    position: absolute;
-    content: "";
-    top: 27px;
-    width: 960px;
-    height: 1px;
-    background-color: $grey;
-    z-index: 1;
+    margin-top: 85px;
   }
 }
 
@@ -43,14 +30,14 @@
   @include tablet {
     margin: 0;
     font-size: 21px;
-    margin-bottom: 18px;
+    margin-bottom: 10px;
     width: 402px;
   }
 
   @include desktop {
     width: 400px;
     margin: 0 auto;
-    margin-bottom: 28px;
+    margin-bottom: 13px;
     background-color: $white;
     position: relative;
     z-index: 2;
@@ -61,6 +48,7 @@
   display: block;
   width: 100%;
   margin: auto;
+  resize: none;
 
   @include fontMain;
 

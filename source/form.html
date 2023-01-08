@@ -28,10 +28,10 @@
                             <a class="main-nav__item-link" href="#">htmlacademy</a>
                         </li>
                     </ul>
-                    <a class="main-header__logo">
-                        <img src="img/main-header__logo.svg" width="185" height="96" alt="Логотип Седоны">
+                    <a class="main-header__logo"  href="#">
+                        <img src="img/main-header-logo.svg" width="185" height="96" alt="Логотип Седоны">
                     </a>
-                    <button id="nav" class="main-nav__toggle" type="button">
+                    <button id="nav" class="main-nav__toggle main-nav__toggle--opened" type="button">
                         <span class="visually-hidden">Открыть меню</span>
                     </button>
                 </nav>
@@ -170,25 +170,28 @@
 
         <footer class="main-footer">
             <div class="main-footer__wrapper">
-                <a class="main-footer__link">#visitsedona</a>
+                <a class="main-footer__link" href="#">#visitsedona</a>
                 <ul class="main-footer__social-list">
                     <li class="main-footer__social-item media-item media-item--vk">
-                        <span class="visually-hidden">вконтакте</span>
+                        <a class="media-item__link" href="#">
+                            <span class="visually-hidden">Вконтакте</span>
+                        </a>
                     </li>
                     <li class="main-footer__social-item media-item media-item--tg">
-                        <span class="visually-hidden">телеграм</span>
+                        <a class="media-item__link" href="#">
+                            <span class="visually-hidden">Телеграм</span>
+                        </a>
                     </li>
                     <li class="main-footer__social-item media-item media-item--yt">
-                        <span class="visually-hidden">ютуб</span>
+                        <a class="media-item__link" href="#">
+                            <span class="visually-hidden">Ютуб</span>
+                        </a>
                     </li>
                 </ul>
-                <a class="main-footer__copyrights">
+                <a class="main-footer__copyrights" href="https://htmlacademy.ru/intensive/adaptive">
                     разработано
                     <svg class="main-footer__copyrights-logo" width="27" height="35" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25
-                                            3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8
-                                            1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z"
-                        fill="currentColor" />
+                        <use href="./img/sprite.svg#htmlacademy" width="27" height="35" />
                     </svg>
                     </a>
             </div>

@@ -1,7 +1,7 @@
 .main-nav {
   @include fontMain;
 
-  // padding-top: 56px;
+  padding-top: 96px;
   display: flex;
   position: relative;
   text-transform: uppercase;
@@ -27,8 +27,6 @@
 }
 
 .main-nav__list {
-  position: absolute;
-  transform: translateY(-100%);
   transition-duration: 0.3s;
   margin: 0;
   padding: 0;

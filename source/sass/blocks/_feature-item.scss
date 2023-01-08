@@ -1,9 +1,7 @@
-
 .feature-item {
   padding-left: 65px;
   padding-right: 18px;
   padding-top: 6px;
-  margin-top: 27.55px;
   text-transform: uppercase;
   height: auto;
   background-repeat: no-repeat;
@@ -30,7 +28,7 @@
 }
 
 .feature-item--home {
-  background-image: url("../../img/house-logo.svg");
+  background-image: url("../img/house-logo.svg");
   margin-top: 0;
 
   @include desktop {
@@ -39,7 +37,12 @@
 }
 
 .feature-item--food {
-  background-image: url("../../img/burger-logo.svg");
+  margin-top: 30px;
+  background-image: url("../img/burger-logo.svg");
+
+  @include tablet {
+    margin-top: 0;
+  }
 
   @include desktop {
     background-size: 73px 68px;
@@ -47,7 +50,12 @@
 }
 
 .feature-item--surprise {
-  background-image: url("../../img/gift-logo.svg");
+  margin-top: 25px;
+  background-image: url("../img/gift-logo.svg");
+
+  @include tablet {
+    margin-top: 0;
+  }
 
   @include desktop {
     background-size: 77px 75px;

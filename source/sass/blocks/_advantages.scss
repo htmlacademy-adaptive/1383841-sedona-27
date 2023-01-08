@@ -4,7 +4,7 @@
 
 .advantages__slogan {
   text-transform: uppercase;
-  display: inline;
+  margin: 0 auto;
   font-size: 18px;
 
   @include tablet {
@@ -19,7 +19,6 @@
   margin: 0;
   margin-top: 35px;
   display: block;
-  max-width: 800px;
 
   @include tablet {
     margin-top: 27px;

@@ -1,13 +1,14 @@
-.cards__item {
+.card {
   position: relative;
   border-top: 1px solid $grey;
-  padding: 28px 20px 27px 20px;
+  padding: 26px 20px 29px 20px;
   margin: auto;
   width: 100%;
 
   @include tablet {
+    align-self: stretch;
     border: none;
-    height: 347px;
+    min-height: 347px;
     min-width: 324px;
     padding: 0;
     flex-grow: 1;
@@ -16,11 +17,25 @@
 
   @include desktop {
     position: relative;
-    height: 267px;
+    min-height: 267px;
   }
 }
 
-.cards__item-photo {
+.card--current {
+  @include tablet {
+    min-height: 480px;
+    min-width: 648px;
+    width: 100%;
+    grid-row: 1/2;
+    grid-column: 1/-1;
+  }
+
+  @include desktop {
+    min-height: 400px;
+  }
+}
+
+.card__photo {
   width: 100%;
 }
 

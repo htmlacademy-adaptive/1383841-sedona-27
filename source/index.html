@@ -24,13 +24,13 @@
                             <a class="main-nav__item-link" href="form.html">форма отзыва</a>
                         </li>
                         <li class="main-nav__item">
-                            <a class="main-nav__item-link" href="#">htmlacademy</a>
+                            <a class="main-nav__item-link" href="https://htmlacademy.ru/intensive/adaptive">htmlacademy</a>
                         </li>
                     </ul>
-                    <a class="main-header__logo">
-                        <img src="img/main-header__logo.svg" width="185" height="96" alt="Логотип Седоны">
+                    <a class="main-header__logo" href="#">
+                        <img src="img/main-header-logo.svg" width="185" height="96" alt="Логотип Седоны">
                     </a>
-                    <button id="nav" class="main-nav__toggle" type="button">
+                    <button id="nav" class="main-nav__toggle main-nav__toggle--opened" type="button">
                         <span class="visually-hidden">Открыть меню</span>
                     </button>
                 </nav>
@@ -41,11 +41,8 @@
 
             <h1 class="visually-hidden"> Седона - Городок в США </h1>
             <section class="advantages-logo">
-                <h2 class="visually-hidden">приветствие города Седона</h2>
-                <picture>
-                    <source media="(min-width: 768px)" srcset="img/text-index_tab.svg">
-                    <img class="advantages-logo__picture" src="img/text-index.svg" alt="welcome to the gorgeous sedona" width="459" height="350">
-                </picture>
+                <h2 class="visually-hidden">Приветствие города Седона</h2>
+                <img class="advantages-logo__picture" src="img/text-index.svg" alt="welcome to the gorgeous sedona">
             </section>
 
             <section class="advantages">
@@ -63,8 +60,11 @@
                                     <p class="advantages-column__depiction">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
                                 </div>
                                 <picture>
-                                    <source media="(min-width: 1200px)" srcset="img/photo-1_des.jpg 1x, img/photo-1_des-2x.jpg 2x">
-                                    <source media="(min-width: 768px)" srcset="img/photo-1_tab.jpg 1x, img/photo-1_tab-2x.jpg 2x">
+                                    <source media="(min-width: 1200px)" type="image/webp" srcset="img/photo-1-des.webp 1x, img/photo-1-des-2x.webp 2x">
+                                    <source media="(min-width: 768px)" type="image/webp" srcset="img/photo-1-tab.webp 1x, img/photo-1-tab-2x.webp 2x">
+                                    <source media="(min-width: 10px)" type="image/webp" srcset="img/photo-1.webp 1x, img-photo-1-2x.webp 2x">
+                                    <source media="(min-width: 1200px)" srcset="img/photo-1-des.jpg 1x, img/photo-1-des-2x.jpg 2x">
+                                    <source media="(min-width: 768px)" srcset="img/photo-1-tab.jpg 1x, img/photo-1-tab-2x.jpg 2x">
                                     <img  class="advantages-img" src="img/photo-1.jpg" srcset="img/photo-1-2x.jpg 2x" alt="город с видом на горы">
                                 </picture>
                             </div>
@@ -86,14 +86,17 @@
                         <li class="advantages__item">
                             <div class="advantages__columns advantages__columns--reverse">
                                 <picture>
-                                    <source media="(min-width: 1200px)" srcset="img/photo-2_des.jpg 1x, img/photo-2_des-2x.jpg 2x">
-                                    <source media="(min-width: 768px)" srcset="img/photo-2_tab.jpg 1x, img/photo-2_tab-2x.jpg 2x">
+                                    <source media="(min-width: 1200px)" type="image/webp" srcset="img/photo-2-des.webp 1x, img/photo-2-des-2x.webp 2x">
+                                    <source media="(min-width: 768px)" type="image/webp" srcset="img/photo-2-tab.webp 1x, img/photo-2-tab-2x.webp 2x">
+                                    <source media="(min-width: 10px)" type="image/webp" srcset="img/photo-2.webp 1x, img/photo-2-2x.webp 2x">
+                                    <source media="(min-width: 1200px)" srcset="img/photo-2-des.jpg 1x, img/photo-2-des-2x.jpg 2x">
+                                    <source media="(min-width: 768px)" srcset="img/photo-2-tab.jpg 1x, img/photo-2-tab-2x.jpg 2x">
                                     <img class="advantages-img" src="img/photo-2.jpg" srcset="img/photo-2-2x.jpg 2x" alt="каньон">
                                 </picture>
                                 <div class="advantages-column">
                                     <h3 class="advantages-column__title">там есть мост дьявола</h3>
                                     <span class="advantages-column__numbers advantages-column__numbers--white">— №2 —</span>
-                                    <p class="advantages-column__depiction">Да, по нему можно пройти!<br>Если вы осмелитесь, конечно</p>
+                                    <p class="advantages-column__depiction">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
                                 </div>
                             </div>
                         </li>
@@ -130,30 +133,41 @@
                 <h2 class="visually-hidden">Карта с Седоной</h2>
                 <iframe class="location__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.180521635564!2d-111.8302436892129!3d34.854373356439645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1670687759162!5m2!1sru!2sru" width="600" height="450" style="border: 0;" allowfullscreen=""
                         loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <picture>
+                    <source media="(min-width: 1200px)" type="image/webp" srcset="img/main-map-des.webp 1x, img/main-map-des-2x.webp 2x">
+                    <source media="(min-width: 768px)" type="image/webp" srcset="img/main-map-tab.webp 1x, img/main-map-tab-2x.webp 2x">
+                    <source media="(min-width: 10px)" type="image/webp" srcset="img/main-map.webp 1x, img/main-map-2x.webp 2x">
+                    <source media="(min-width: 1200px)" srcset="img/main-map-des.jpg 1x, img/main-map-des-2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/main-map-tab.jpg 1x, img/main-map-tab-2x.jpg 2x">
+                    <img class="visually-hidden" src="img/main-map.jpg" srcset="img/main-map-2x.jpg 2x" alt="Карта Седоны">
+                </picture>
             </section>
           </main>
 
         <footer class="main-footer">
             <div class="main-footer__wrapper">
-                <a class="main-footer__link">#visitsedona</a>
+                <a class="main-footer__link" href="#">#visitsedona</a>
                 <ul class="main-footer__social-list">
                     <li class="main-footer__social-item media-item media-item--vk">
-                        <span class="visually-hidden">вконтакте</span>
+                        <a class="media-item__link" href="#">
+                            <span class="visually-hidden">Вконтакте</span>
+                        </a>
                     </li>
                     <li class="main-footer__social-item media-item media-item--tg">
-                        <span class="visually-hidden">телеграм</span>
+                        <a class="media-item__link" href="#">
+                            <span class="visually-hidden">Телеграм</span>
+                        </a>
                     </li>
                     <li class="main-footer__social-item media-item media-item--yt">
-                        <span class="visually-hidden">ютуб</span>
+                        <a class="media-item__link" href="#">
+                            <span class="visually-hidden">Ютуб</span>
+                        </a>
                     </li>
                 </ul>
-                <a class="main-footer__copyrights">
+                <a class="main-footer__copyrights" href="https://htmlacademy.ru/intensive/adaptive">
                     разработано
                     <svg class="main-footer__copyrights-logo" width="27" height="35" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25
-                                            3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8
-                                            1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z"
-                        fill="currentColor" />
+                        <use href="./img/sprite.svg#htmlacademy" width="27" height="35"/>
                     </svg>
                     </a>
             </div>

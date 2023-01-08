@@ -21,6 +21,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
+    margin-bottom: 45px;
   }
 
   @include desktop {
@@ -28,6 +29,7 @@
     justify-items: auto;
     width: 960px;
     margin: 0 auto;
+    margin-bottom: 57px;
   }
 }
 
@@ -47,13 +49,12 @@
   @include tablet {
     padding-right: 43px;
     padding-left: 0;
-    padding-bottom: 48px;
+    padding-bottom: 0;
     border-bottom: 0;
   }
 
   @include desktop {
     padding: 0;
-    padding-bottom: 57px;
     width: 410px;
   }
 }
@@ -79,7 +80,7 @@
   left: 50%;
   top: 0;
   width: 1px;
-  height: 338px;
+  height: 100%;
   background-color: $grey;
 
   @include tablet {
@@ -131,6 +132,7 @@
   @include tablet {
     padding-left: 44px;
     padding-right: 0;
+    padding-bottom: 0;
     border-bottom: 0;
     margin-top: 0;
   }

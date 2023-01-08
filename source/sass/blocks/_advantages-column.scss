@@ -11,6 +11,8 @@
 
   @include tablet {
     flex-grow: 1;
+    display: grid;
+    place-items: center;
     max-width: 400px;
     padding-left: 33px;
     padding-right: 33px;
@@ -23,12 +25,28 @@
   }
 }
 
-.advantages-column--arrow {
-  padding-top: 70px;
-  background-image: url("../img/arrow-bottom--blue.svg");
+.advantages-column--arrow::before {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 768px;
+  overflow: hidden;
+  height: 37px;
+  top: 0;
+  left: 50%;
+  background-image: url("../img/arrow-bottom-blue.svg");
   background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: 0 0;
+  transform: translateX(-50%);
+  z-index: 1;
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.advantages-column--arrow {
+  position: relative;
+  padding-top: 70px;
 
   @include tablet {
     background-image: none;
@@ -107,7 +125,7 @@
   margin-bottom: 0;
 
   @include tablet {
-    margin-top: 20px;
+    margin-top: 25px;
     width: auto;
     font-size: 13px;
   }

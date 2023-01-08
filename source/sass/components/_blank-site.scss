@@ -55,6 +55,7 @@
 
   @include desktop {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     gap: 64px;
     width: 960px;
