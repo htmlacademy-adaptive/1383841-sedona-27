@@ -37,6 +37,8 @@
 .main-footer__link {
   text-transform: uppercase;
   font-size: 21px;
+  text-decoration: none;
+  color: $black;
 }
 
 .main-footer__link:hover {
@@ -68,6 +70,8 @@
 .main-footer__copyrights {
   display: flex;
   align-items: center;
+  text-decoration: none;
+  color: $black;
 
   @include fontSmall;
   text-transform: uppercase;

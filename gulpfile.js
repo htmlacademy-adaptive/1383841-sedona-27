@@ -32,13 +32,12 @@ export const styles = () => {
 const html = () => {
   return gulp.src('source/*.html')
     .pipe(gulp.dest('build'));
-  done();
 }
 
 // Scripts
 
 const scripts = () => {
-  return gulp.src('source/js/script.js', {allowEmpty: true})
+  return gulp.src('source/js/*.js', {allowEmpty: true})
     .pipe(gulp.dest('build/js'))
     .pipe(browser.stream());
 }
@@ -134,7 +133,7 @@ const reload = (done) => {
 
 const watcher = () => {
   gulp.watch('source/sass/**/*.scss', gulp.series(styles));
-  gulp.watch('source/js/script.js', gulp.series(scripts));
+  gulp.watch('source/js/*.js', gulp.series(scripts));
   gulp.watch('source/*.html', gulp.series(html, reload));
 }
 

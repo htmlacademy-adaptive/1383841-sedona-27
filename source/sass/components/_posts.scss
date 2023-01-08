@@ -70,7 +70,7 @@
 
 .posts__item--current {
   @include tablet {
-    height: 480px;
+    min-height: 480px;
     min-width: 648px;
     width: 100%;
     grid-row: 1/2;

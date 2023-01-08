@@ -41,3 +41,8 @@
 .media-item:active + .media-item::before {
   opacity: 0.1;
 }
+
+.media-item__link {
+  width: 100%;
+  height: 100%;
+}

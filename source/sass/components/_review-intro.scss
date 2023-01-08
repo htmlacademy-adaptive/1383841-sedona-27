@@ -4,14 +4,14 @@
   padding-top: 36px;
 
   @include tablet {
-    padding-top: 64px;
+    padding-top: 67px;
     text-align: center;
     padding-bottom: 105px;
   }
 
   @include desktop {
-    padding-top: 110px;
-    padding-bottom: 67px;
+    padding-top: 113px;
+    padding-bottom: 70px;
   }
 }
 
@@ -28,7 +28,11 @@
 
   @include tablet {
     font-size: 30px;
-    margin-bottom: 35px;
+    margin-bottom: 25px;
+  }
+
+  @include desktop {
+    margin-bottom: 30px;
   }
 }
 
