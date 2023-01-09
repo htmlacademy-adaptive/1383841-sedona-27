@@ -12,31 +12,26 @@
 <body>
     <div class="wrapper">
         <header class="main-header">
-            <div class="main-header__wrapper wrapper">
+            <div class="main-header__wrapper">
                 <nav class="main-nav">
-                    <div class="main-nav__wrapper">
-                        <ul class="main-nav__list main-nav__list--left">
-                            <li class="main-nav__item">
-                                <a class="main-nav__item-link" href="index.html">главная</a>
-                            </li>
-                            <li class="main-nav__item">
-                                <a class="main-nav__item-link" href="catalog.html">фото и видео</a>
-                            </li>
-                            <li class="main-nav__item main-nav__item--active">
-                                <a class="main-nav__item-link">форма отзыва</a>
-                            </li>
-                            <li class="main-nav__item">
-                                <a class="main-nav__item-link" href="#">htmlacademy</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <a class="main-header__logo">
-                        <picture>
-                            <source media="(min-width: 768px)" src="img/main-header__logo_tab.svg">
-                            <img src="img/main-header__logo.svg" alt="Логотип Седоны">
-                        </picture>
+                    <ul class="main-nav__list">
+                        <li class="main-nav__item">
+                            <a class="main-nav__item-link" href="index.html">главная</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a class="main-nav__item-link" href="catalog.html">фото и видео</a>
+                        </li>
+                        <li class="main-nav__item  main-nav__item--active">
+                            <a class="main-nav__item-link">форма отзыва</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a class="main-nav__item-link" href="#">htmlacademy</a>
+                        </li>
+                    </ul>
+                    <a class="main-header__logo"  href="#">
+                        <img src="img/main-header-logo.svg" width="185" height="96" alt="Логотип Седоны">
                     </a>
-                    <button class="main-nav__toggle main-nav__toggle--opened" type="button">
+                    <button id="nav" class="main-nav__toggle main-nav__toggle--opened" type="button">
                         <span class="visually-hidden">Открыть меню</span>
                     </button>
                 </nav>
@@ -58,7 +53,7 @@
                 </div>
             </section>
             <section class="blank-review">
-                <form action="send.php" method="post" class="blank-form">
+                <form action="https://echo.htmlacademy.ru" method="post" class="blank-form">
                     <div class="blank-review__wrapper">
                         <div class="blank-review__main-info">
                             <fieldset class="blank-review__intro">
@@ -144,15 +139,29 @@
                             </ul>
                         </fieldset>
                         <fieldset class="blank-emotions">
-                            <h2 class="blank-emotions__title">опишите свои эмоции:</h2>
-                            <form action="send.php" method="post" class="blank-emotions-form">
-                                <label for="emotions" class="visually-hidden">Ваше имя</label>
-                                <textarea class="blank-emotions__depiction" placeholder="Опишите подробно все свои восторги " id="emotions"></textarea>
-                            </form>
+                            <legend class="blank-emotions__title">опишите свои эмоции:</legend>
+                            <label for="emotions" class="visually-hidden">Ваше имя</label>
+                            <textarea class="blank-emotions__depiction" placeholder="Опишите подробно все свои восторги " id="emotions"></textarea>
                         </fieldset>
                         <div class="blank-submit">
                             <button class="blank-submit__button blue-form-button" type="submit">отправить отзыв</button>
                             <span class="blank-submit__depiction">* — обязательные поля</span>
+                        </div>
+                        <div class="modal-form modal-form-success closed">
+                            <div class="modal-form__block form-success">
+                                <h3 class="form-success__title">Ваш отзыв отправлен!</h3>
+                                <p class="form-success__depiction">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы опубликуем его на сайте.</p>
+                                <div class="form-success__block">
+                                    <button class="form-success__block-button blue-form-button">Закрыть окно</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-form modal-form-failure closed">
+                            <div class="modal-form__block form-failure">
+                                <h3 class="form-failure__title">Что-то пошло не так!</h3>
+                                <p class="form-failure__depiction">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+                                <button class="form-failure__button blue-form-button">ок</button>
+                            </div>
                         </div>
                     </div>
                 </form>
@@ -161,29 +170,34 @@
 
         <footer class="main-footer">
             <div class="main-footer__wrapper">
-                <a class="main-footer__link">#visitsedona</a>
+                <a class="main-footer__link" href="#">#visitsedona</a>
                 <ul class="main-footer__social-list">
                     <li class="main-footer__social-item media-item media-item--vk">
-                        <span class="visually-hidden">вконтакте</span>
+                        <a class="media-item__link" href="#">
+                            <span class="visually-hidden">Вконтакте</span>
+                        </a>
                     </li>
                     <li class="main-footer__social-item media-item media-item--tg">
-                        <span class="visually-hidden">телеграм</span>
+                        <a class="media-item__link" href="#">
+                            <span class="visually-hidden">Телеграм</span>
+                        </a>
                     </li>
                     <li class="main-footer__social-item media-item media-item--yt">
-                        <span class="visually-hidden">ютуб</span>
+                        <a class="media-item__link" href="#">
+                            <span class="visually-hidden">Ютуб</span>
+                        </a>
                     </li>
                 </ul>
-                <a class="main-footer__copyrights">
+                <a class="main-footer__copyrights" href="https://htmlacademy.ru/intensive/adaptive">
                     разработано
                     <svg class="main-footer__copyrights-logo" width="27" height="35" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25
-                                            3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8
-                                            1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z"
-                        fill="currentColor" />
+                        <use href="./img/sprite.svg#htmlacademy" width="27" height="35" />
                     </svg>
                     </a>
             </div>
         </footer>
     </div>
+<script src="js/nav.js"></script>
+<script src="js/inputs.js"></script>
 </body>
 </html>

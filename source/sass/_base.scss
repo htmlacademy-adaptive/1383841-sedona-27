@@ -2,20 +2,21 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("../../fonts/ptsans.woff2") format("woff2");
+  src: url("../fonts/ptsans.woff2") format("woff2");
 
   font-display: swap;
 }
 
 body {
   @include fontMain;
+  font-family: "PT Sans", sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
   flex-grow: 1;
   width: 100%;
   margin: 0;
-  background-color: #E7E5E5;
+  background-color: $grey-body;
 }
 
 *,

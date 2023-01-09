@@ -6,7 +6,6 @@
   padding-left: 19px;
   padding-right: 19px;
   background-image: url("../img/main-background.jpg");
-
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: cover;
@@ -14,16 +13,28 @@
   object-fit: cover;
   overflow: hidden;
 
+  @include retina {
+    background-image: url("../img/main-background-2x.jpg");
+  }
+
   @include tablet {
-    background-image: url("../img/main-background_tab.jpg");
+    background-image: url("../img/main-background-tab.jpg");
     padding-left: 0;
     padding-right: 0;
     padding-top: 77px;
     padding-bottom: 85px;
+
+    @include retina {
+      background-image: url("../img/main-background-tab-2x.jpg");
+    }
   }
 
   @include desktop {
-    background-image: url("../img/main-background_des.jpg");
+    background-image: url("../img/main-background-des.jpg");
+
+    @include retina {
+      background-image: url("../img/main-background-des-2x.jpg");
+    }
   }
 }
 
@@ -45,6 +56,13 @@
   margin: 0 auto;
   min-width: 282px;
   min-height: 214px;
+  width: 100%;
+  height: 100%;
+
+  @include tablet {
+    width: 461px;
+    height: 349px;
+  }
 }
 
 .advantages-logo--mini {
@@ -54,13 +72,21 @@
   padding-bottom: 60px;
   background-image: url("../img/background-mobile.jpg");
 
+  @include retina {
+    background-image: url("../img/background-mobile-2x.jpg");
+  }
+
   @include tablet {
     padding-top: 95px;
     padding-bottom: 107.4px;
     padding-right: 154.1px;
     padding-left: 157px;
     background-image: url("../img/background-tablet.jpg");
-}
+
+    @include retina {
+      background-image: url("../img/background-tablet-2x.jpg");
+    }
+  }
 
   @include desktop {
     padding-top: 101px;
@@ -68,6 +94,10 @@
     padding-right: 371px;
     padding-left: 369px;
     background-image: url("../img/background-desktop.jpg");
+
+    @include retina {
+      background-image: url("../img/background-desktop-2x.jpg");
+    }
   }
 }
 
