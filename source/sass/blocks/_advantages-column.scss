@@ -29,13 +29,14 @@
   display: block;
   position: absolute;
   content: "";
-  width: 768px;
+  width: 100%;
   overflow: hidden;
   height: 37px;
   top: 0;
   left: 50%;
   background-image: url("../img/arrow-bottom-blue.svg");
   background-repeat: no-repeat;
+  background-size: contain;
   transform: translateX(-50%);
   z-index: 1;
 
