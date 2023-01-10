@@ -1,0 +1,25 @@
+.no-js-flex {
+    display: flex;
+    transform: translateX(0);
+}
+
+.no-js-nav-button {
+    position: absolute;
+    background-color: $white;
+    width: 26px;
+    left: 90%;
+    transform: rotate(45deg);
+    z-index: 4;
+}
+
+.no-js-nav-button::after {
+    display: none;
+}
+
+.no-js-nav-button::before {
+    background-color: $white;
+    transform: rotate(-90deg);
+    top: -0.5px;
+    width: 26px;
+    z-index: 2;
+}

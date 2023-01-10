@@ -62,7 +62,7 @@ const click_button = document.querySelectorAll('.card-info__counter');
 
 
 function showConsole() {
-  console.log("УРА!!!");
+  console.log('УРА!!!');
 }
 
 cards.addEventListener('click', function (event) {

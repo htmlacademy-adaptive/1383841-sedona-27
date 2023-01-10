@@ -1,10 +1,15 @@
 // скрипт для открытия навигации
 
-let button_nav = document.querySelector('.main-nav__toggle');
+let buttonNav = document.querySelector('.main-nav__toggle');
 let nav = document.querySelector('.main-nav__list');
+let disableJsFlex = document.querySelector('.no-js-flex');
+let disableJsNavButton = document.querySelector('.no-js-nav-button');
 setTimeout(nav.classList.add('main-nav__list--tablet', 5000));
 
-button_nav.onclick = function () {
+disableJsFlex.classList.remove('no-js-flex');
+disableJsNavButton.classList.remove('no-js-nav-button');
+
+buttonNav.onclick = function () {
   nav.classList.toggle('opened-flex');
-  button_nav.classList.toggle('main-nav__toggle--opened');
+  buttonNav.classList.toggle('main-nav__toggle--opened');
 };

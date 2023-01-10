@@ -14,24 +14,24 @@
         <header class="main-header">
             <div class="main-header__wrapper">
                 <nav class="main-nav">
-                    <ul class="main-nav__list">
+                    <ul class="main-nav__list no-js-flex">
                         <li class="main-nav__item">
                             <a class="main-nav__item-link" href="index.html">главная</a>
                         </li>
                         <li class="main-nav__item">
                             <a class="main-nav__item-link" href="catalog.html">фото и видео</a>
                         </li>
-                        <li class="main-nav__item  main-nav__item--active">
-                            <a class="main-nav__item-link">форма отзыва</a>
+                        <li class="main-nav__item main-nav__item--active">
+                            <a class="main-nav__item-link" href="#">форма отзыва</a>
                         </li>
                         <li class="main-nav__item">
-                            <a class="main-nav__item-link" href="#">htmlacademy</a>
+                            <a class="main-nav__item-link" href="https://htmlacademy.ru/intensive/adaptive">htmlacademy</a>
                         </li>
                     </ul>
-                    <a class="main-header__logo"  href="#">
+                    <a class="main-header__logo" href="index.html">
                         <img src="img/main-header-logo.svg" width="185" height="96" alt="Логотип Седоны">
                     </a>
-                    <button id="nav" class="main-nav__toggle main-nav__toggle--opened" type="button">
+                    <button id="nav" class="main-nav__toggle no-js-nav-button" type="button">
                         <span class="visually-hidden">Открыть меню</span>
                     </button>
                 </nav>
@@ -57,7 +57,7 @@
                     <div class="blank-review__wrapper">
                         <div class="blank-review__main-info">
                             <fieldset class="blank-review__intro">
-                                <legend class="blank-review__legend">представьтесь:</legend>
+                                <legend class="blank-review__legend blank-review__legend-name">представьтесь:</legend>
                                 <label for="forename" class="blank-review__intro-name intro-name">
                                     <span class="intro-name__text">имя*</span>
                                     <input type="text" id="forename" name="forename" class="blank-review__name blank-review__label" placeholder="Пётр" required>
@@ -72,7 +72,7 @@
                                 </label>
                             </fieldset>
                             <fieldset class="blank-review__contacts">
-                                <legend class="blank-review__contacts-legends blank-review__legend">контактная информация:</legend>
+                                <legend class="blank-review__contacts-legends blank-review__legend  blank-review__legend-name">контактная информация:</legend>
                                 <label for="telephone" class="blank-review__contacts-data intro-name">
                                     <span class="intro-name__text">контактный телефон*:</span>
                                     <input type="tel" id="telephone" name="telephone" class="blank-review__tel blank-review__label" placeholder="Введите телефон" required>
@@ -147,7 +147,7 @@
                             <button class="blank-submit__button blue-form-button" type="submit">отправить отзыв</button>
                             <span class="blank-submit__depiction">* — обязательные поля</span>
                         </div>
-                        <div class="modal-form modal-form-success closed">
+                        <div class="modal-form modal-form-success">
                             <div class="modal-form__block form-success">
                                 <h3 class="form-success__title">Ваш отзыв отправлен!</h3>
                                 <p class="form-success__depiction">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы опубликуем его на сайте.</p>
@@ -197,7 +197,7 @@
                         </a>
                     </li>
                 </ul>
-                <a class="main-footer__copyrights" href="https://htmlacademy.ru/intensive/adaptive">
+                <a class="main-footer__copyrights  main-footer__copyrights--catalog" href="https://htmlacademy.ru/intensive/adaptive">
                     разработано
                     <svg class="main-footer__copyrights-logo" width="27" height="35" xmlns="http://www.w3.org/2000/svg">
                         <use href="./img/sprite.svg#htmlacademy" width="27" height="35" />

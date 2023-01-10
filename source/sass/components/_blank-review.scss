@@ -18,10 +18,11 @@
   flex-direction: column;
 
   @include tablet {
+    position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
-    margin-bottom: 45px;
+    margin-bottom: 50px;
   }
 
   @include desktop {
@@ -29,7 +30,7 @@
     justify-items: auto;
     width: 960px;
     margin: 0 auto;
-    margin-bottom: 57px;
+    margin-bottom: 52px;
   }
 }
 
@@ -49,12 +50,14 @@
   @include tablet {
     padding-right: 43px;
     padding-left: 0;
+    padding-top: 50px;
     padding-bottom: 0;
     border-bottom: 0;
   }
 
   @include desktop {
     padding: 0;
+    padding-top: 55px;
     width: 410px;
   }
 }
@@ -105,6 +108,19 @@
   }
 }
 
+.blank-review__legend-name {
+  @include tablet {
+    position: absolute;
+    left: 60px;
+    top: 0;
+  }
+
+  @include desktop {
+    left: 145px;
+    top: 0;
+  }
+}
+
 .blank-review__intro-name {
   @include fontSmall;
   text-transform: uppercase;
@@ -132,6 +148,7 @@
   @include tablet {
     padding-left: 44px;
     padding-right: 0;
+    padding-top: 50px;
     padding-bottom: 0;
     border-bottom: 0;
     margin-top: 0;
@@ -139,6 +156,7 @@
 
   @include desktop {
     padding: 0;
+    padding-top: 50px;
     width: 402px;
   }
 }
@@ -149,8 +167,13 @@
   @include tablet {
     margin: 0;
     margin-bottom: 28px;
+    left: 25px;
     width: 280px;
     white-space: nowrap;
+  }
+
+  @include desktop {
+    left: 30px;
   }
 }
 

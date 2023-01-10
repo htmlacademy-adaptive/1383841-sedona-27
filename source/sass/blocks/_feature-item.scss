@@ -81,4 +81,10 @@
   @include tablet {
     margin-top: 25px;
   }
+
+  @include desktop {
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 25px;
+  }
 }

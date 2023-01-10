@@ -5,9 +5,11 @@
 .advantages__slogan {
   text-transform: uppercase;
   margin: 0 auto;
+  width: 260px;
   font-size: 18px;
 
   @include tablet {
+    width: auto;
     font-size: 21px;
   }
 }
@@ -61,8 +63,8 @@
 }
 
 .advantages__item--grey {
-  padding-left: 18px;
-  padding-right: 18px;
+  padding-left: 35px;
+  padding-right: 35px;
   background-color: $grey;
 
   @include tablet {

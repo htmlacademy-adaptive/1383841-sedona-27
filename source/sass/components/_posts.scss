@@ -7,14 +7,16 @@
 
   @include tablet {
     padding-top: 66px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 83px;
     width: 458px;
     margin: 0 auto;
-    margin-bottom: 27px;
   }
 
   @include desktop {
     padding-top: 100px;
-    margin-bottom: 32px;
+    padding-bottom: 90px;
   }
 }
 
@@ -42,6 +44,11 @@
   line-height: 21px;
   text-transform: uppercase;
   margin: 0;
+
+  @include tablet {
+    width: 440px;
+    margin: 0 auto;
+  }
 }
 
 .posts__list {

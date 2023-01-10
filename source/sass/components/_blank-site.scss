@@ -30,7 +30,9 @@
   @include tablet {
     width: 410px;
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   @include desktop {

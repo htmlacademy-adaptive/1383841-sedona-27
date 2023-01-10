@@ -1,7 +1,6 @@
 .main-nav {
   @include fontMain;
 
-  padding-top: 96px;
   display: flex;
   position: relative;
   text-transform: uppercase;
@@ -27,6 +26,8 @@
 }
 
 .main-nav__list {
+  position: absolute;
+  transform: translateY(-100%);
   transition-duration: 0.3s;
   margin: 0;
   padding: 0;
@@ -94,8 +95,11 @@
 .main-nav__item-link {
   text-decoration: none;
   color: inherit;
+  font-size: 18px;
 
-  font-size: 14px;
+  @include tablet {
+    font-size: 14px;
+  }
 }
 
 .main-nav__item-link:hover {
@@ -173,5 +177,5 @@
   transform: rotate(-90deg);
   top: -0.5px;
   width: 26px;
-  z-index: 100;
+  z-index: 2;
 }

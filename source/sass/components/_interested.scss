@@ -1,7 +1,7 @@
 .interested {
   @include fontMain;
   padding-left: 18px;
-  padding-top: 40px;
+  padding-top: 35px;
   padding-right: 18px;
   padding-bottom: 51px;
   display: flex;
@@ -20,6 +20,7 @@
   }
 
   @include desktop {
+    padding-top: 60px;
     padding-bottom: 65px;
   }
 }
@@ -32,6 +33,10 @@
 
   @include tablet {
     font-size: 30px;
+    margin-bottom: 33px;
+  }
+
+  @include desktop {
     margin-bottom: 30px;
   }
 }
@@ -39,20 +44,22 @@
 .interested__depiction {
   @include fontSmall;
 
-  line-height: 18px;
+  font-size: 14px;
+  line-height: 21px;
   text-transform: uppercase;
   width: 262px;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 
   @include tablet {
+    text-align: center;
     line-height: 21px;
     width: 435px;
-    margin-bottom: 45px;
+    margin-bottom: 40px;
   }
 
   @include desktop {
-    margin-bottom: 50px;
+    margin-bottom: 45px;
   }
 }
 
@@ -63,11 +70,12 @@
   padding: 14px;
   width: 284px;
   height: 58px;
-  padding-top: 16px;
+  padding-top: 18px;
   background-color: $blue;
   color: $white;
   text-align: center;
   vertical-align: middle;
+  font-size: 21px;
 
   @include tablet {
     max-width: 458px;
