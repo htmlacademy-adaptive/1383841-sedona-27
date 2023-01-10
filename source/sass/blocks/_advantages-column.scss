@@ -7,7 +7,7 @@
   padding-top: 38px;
   padding-left: 18px;
   padding-right: 18px;
-  padding-bottom: 38px;
+  padding-bottom: 36px;
 
   @include tablet {
     flex-grow: 1;
@@ -29,13 +29,14 @@
   display: block;
   position: absolute;
   content: "";
-  width: 768px;
+  width: 100%;
   overflow: hidden;
   height: 37px;
   top: 0;
   left: 50%;
   background-image: url("../img/arrow-bottom-blue.svg");
   background-repeat: no-repeat;
+  background-size: contain;
   transform: translateX(-50%);
   z-index: 1;
 
@@ -58,7 +59,7 @@
   background-color: $grey;
   color: #000000;
   padding: 0;
-  padding-top: 23px;
+  padding-top: 25px;
   padding-bottom: 24px;
   border-bottom: 1px solid rgba(214, 214, 214, 1);
 
@@ -118,7 +119,7 @@
 .advantages-column__depiction {
   @include fontSmall;
   font-size: 14px;
-  width: 265px;
+  max-width: 284px;
   margin: 0 auto;
   text-transform: uppercase;
   margin-top: 15px;
@@ -127,7 +128,7 @@
   @include tablet {
     margin-top: 25px;
     width: auto;
-    font-size: 13px;
+    font-size: 14px;
   }
 }
 

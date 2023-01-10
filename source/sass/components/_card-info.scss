@@ -1,4 +1,6 @@
 .card-info {
+  padding-top: 15px;
+
   @include tablet {
     display: flex;
     gap: 15px;
@@ -17,23 +19,25 @@
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.3);
     padding-left: 25px;
+    padding-top: 10px;
   }
 }
 
 .card-info--current {
   @include desktop {
     bottom: 0;
+    padding-left: 20px;
   }
 }
 
 .card-info__text-title {
   text-transform: uppercase;
   font-size: 14px;
+  line-height: 21px;
   margin: 0;
-  margin-top: 10px;
 
   @include tablet {
-    margin-top: 20px;
+    line-height: 21px;
   }
 
   @include desktop {
@@ -42,6 +46,7 @@
 }
 
 .card-info__counter {
+  position: relative;
   cursor: pointer;
 
   @include fontMain;
@@ -52,18 +57,21 @@
   justify-content: space-between;
   align-items: flex-end;
   padding: 0;
-  gap: 9px;
+  gap: 14px;
   background-color: transparent;
   border: none;
   margin-top: 10px;
 
   @include tablet {
     min-width: 48px;
+    margin-top: 0;
+    align-items: center;
+    gap: 9px;
   }
 
   @include desktop {
     color: $white;
-    margin-top: 15px;
+    margin-top: 0;
   }
 }
 
@@ -78,8 +86,17 @@
 }
 
 .card-info__counter-number {
+  position: absolute;
+  left: 37px;
+  top: 7px;
   width: auto;
   height: 17px;
+
+  @include tablet {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
 }
 
 .card-info__text-author {

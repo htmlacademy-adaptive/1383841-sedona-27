@@ -21,6 +21,16 @@
   }
 }
 
+.card:last-child {
+  border-bottom: 1px solid $grey;
+  padding-bottom: 35px;
+
+  @include tablet {
+    padding: 0;
+    border: none;
+  }
+}
+
 .card--current {
   @include tablet {
     min-height: 480px;

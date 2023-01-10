@@ -7,6 +7,15 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "PT Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsansbold.woff2") format("woff2");
+
+  font-display: swap;
+}
+
 body {
   @include fontMain;
   font-family: "PT Sans", sans-serif;

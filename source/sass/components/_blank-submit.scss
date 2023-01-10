@@ -27,6 +27,8 @@
 }
 
 .blank-submit__depiction {
+  @include fontSmall;
+
   font-size: 12px;
   line-height: 21px;
   text-transform: uppercase;
@@ -45,6 +47,8 @@
 }
 
 .blank-submit__button {
+  @include fontMain;
+  font-size: 21px;
   min-width: 280px;
   height: 58px;
 
