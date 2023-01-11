@@ -10,7 +10,7 @@ let form_staying = document.querySelector('.blank-form');
 
 inputs_button.onclick = function () {
   if (inputs.forEach(function(inputs) {
-    if (inputs.value != '') {
+    if (inputs.value != ' ') {
       success.classList.remove('closed');
       form_staying.submit();
     }
