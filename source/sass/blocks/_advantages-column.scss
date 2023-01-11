@@ -25,7 +25,7 @@
   }
 }
 
-.advantages-column--arrow::before {
+.advantages-column--arrow::after {
   display: block;
   position: absolute;
   content: "";
@@ -33,10 +33,11 @@
   overflow: hidden;
   height: 37px;
   top: 0;
+  object-fit: cover;
   left: 50%;
   background-image: url("../img/arrow-bottom-blue.svg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-position-x: center;
   transform: translateX(-50%);
   z-index: 1;
 
@@ -47,7 +48,8 @@
 
 .advantages-column--arrow {
   position: relative;
-  padding-top: 70px;
+  padding-top: 65px;
+  padding-bottom: 41px;
 
   @include tablet {
     background-image: none;
@@ -72,6 +74,7 @@
   }
 
   @include desktop {
+    width: 300px;
     padding-top: 63px;
     padding-bottom: 41px;
   }
@@ -110,6 +113,14 @@
   }
 }
 
+.advantages-column__title br {
+  display: none;
+
+  @include desktop {
+    display: block;
+  }
+}
+
 .advantages-column__numbers {
   @include fontSmall;
   font-size: 14px;
@@ -129,6 +140,14 @@
     margin-top: 25px;
     width: auto;
     font-size: 14px;
+  }
+}
+
+.advantages-column__depiction br {
+  display: none;
+
+  @include desktop {
+    display: block;
   }
 }
 
